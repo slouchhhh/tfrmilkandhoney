@@ -1,0 +1,65 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ISR_knesset_banner"
+		texturefile = "gfx/texticons/banners/decisions/ISR_knesset_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ISR_war_banner"
+		texturefile = "gfx/texticons/banners/decisions/ISR_war_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ISR_knesset_symbol"
+		texturefile = "gfx/interface/decisions/ISR/ISR_knesset_symbol.png"
+	}
+	spriteType = {
+		name = "GFX_ISR_likkud_texticon"
+		texturefile = "gfx/texticons/ISR/ISR_likkud_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ISR_beiteinu_texticon"
+		texturefile = "gfx/texticons/ISR/ISR_beiteinu_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ISR_haavoda_texticon"
+		texturefile = "gfx/texticons/ISR/ISR_haavoda_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ISR_yeshatid_texticon"
+		texturefile = "gfx/texticons/ISR/ISR_yeshatid_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ISR_hadash_texticon"
+		texturefile = "gfx/texticons/ISR/ISR_hadash_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ISR_torah_texticon"
+		texturefile = "gfx/texticons/ISR/ISR_torah_texticon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_ISR_bluewhite_texticon"
+		texturefile = "gfx/texticons/ISR/ISR_bluewhite_texticon.dds"
+		legacy_lazy_load = no
+	}
+
+	###SUPEREVENTS###
+
+	spriteType = {
+		name = "GFX_arab_israeli_war_pic"
+		texturefile = "gfx/super_events/arab_israeli_war_pic.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_news_retreat_from_lebanon"
+		texturefile = "gfx/event_pictures/news_event/israel/retreat_from_lebanon.dds"
+	}
+}

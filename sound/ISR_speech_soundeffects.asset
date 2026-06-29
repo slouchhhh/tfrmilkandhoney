@@ -1,0 +1,7 @@
+	soundeffect = {
+		name = "TFR_se_hava_nagila"
+		sounds = {
+			sound = TFR_se_hava_nagila
+		}
+		volume = 3.0
+	}

@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_ISR_netanyahu_corruption"
+		texturefile = "gfx/interface/ideas/ISR/ISR_netanyahu_corruption.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ISR_idf"
+		texturefile = "gfx/interface/ideas/ISR/ISR_idf.png"
+	}
+	spriteType = {
+		name = "GFX_idea_ISR_bibi_love"
+		texturefile = "gfx/interface/ideas/ISR/ISR_bibi_love.png"
+	}
+
+
+	### Agency ###
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_isr"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_isr.dds"
+		noOfFrames = 2
+	}
+}

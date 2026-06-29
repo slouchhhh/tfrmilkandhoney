@@ -1,0 +1,19 @@
+scripted_gui = {
+	ISR_arab_israeli_super_event = {
+		context_type = player_context
+		window_name = "ISR_arab_israeli_super_event"
+
+		visible = {
+			has_country_flag = ISR_arab_israeli_war_started_se
+			NOT = {
+				has_global_flag = super_events_off_flag
+			}
+		}
+		
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = ISR_arab_israeli_war_started_se
+			}
+		}
+	}
+}

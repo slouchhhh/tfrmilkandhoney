@@ -1,0 +1,98 @@
+    ISR_decrease_corona = {
+		if = {
+			limit = {
+				has_idea = ISR_coronavirus_pandemic_idea4
+			}
+			remove_ideas = ISR_coronavirus_pandemic_idea4
+			set_country_flag = ISR_no_coronavirus
+			ISR = {
+				country_event = {
+					id = israel.5
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				has_idea = ISR_coronavirus_pandemic_idea3
+			}
+			swap_ideas = {
+				remove_idea = ISR_coronavirus_pandemic_idea3
+				add_idea = ISR_coronavirus_pandemic_idea4
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ISR_coronavirus_pandemic_idea2
+			}
+			swap_ideas = {
+				remove_idea = ISR_coronavirus_pandemic_idea2
+				add_idea = ISR_coronavirus_pandemic_idea3
+			}
+		}
+		else_if = {
+			limit = { 
+				has_idea = ISR_coronavirus_pandemic_idea1 
+			}
+			swap_ideas = {
+				remove_idea = ISR_coronavirus_pandemic_idea1
+				add_idea = ISR_coronavirus_pandemic_idea2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ISR_coronavirus_pandemic_idea
+			}
+			swap_ideas = {
+				remove_idea = ISR_coronavirus_pandemic_idea
+				add_idea = ISR_coronavirus_pandemic_idea1
+			}
+		}
+	}
+
+    ISR_increase_corona = {
+		if = {
+			limit = {
+				has_idea = ISR_coronavirus_pandemic_idea4
+			}
+			swap_ideas = {
+				remove_idea = ISR_coronavirus_pandemic_idea4
+				add_idea = ISR_coronavirus_pandemic_idea3
+			}
+		}
+		else_if = {
+			limit = { 
+				has_idea = ISR_coronavirus_pandemic_idea3
+			}
+			swap_ideas = {
+				remove_idea = ISR_coronavirus_pandemic_idea3
+				add_idea = ISR_coronavirus_pandemic_idea2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ISR_coronavirus_pandemic_idea2
+			}
+			swap_ideas = {
+				remove_idea = ISR_coronavirus_pandemic_idea2
+				add_idea = ISR_coronavirus_pandemic_idea1
+			}
+		}
+		else_if = {
+			limit = { 
+				has_idea = ISR_coronavirus_pandemic_idea1 
+			}
+			swap_ideas = {
+				remove_idea = ISR_coronavirus_pandemic_idea1
+				add_idea = ISR_coronavirus_pandemic_idea
+			}
+		}
+		else_if = {
+			limit = { 
+				has_idea = ISR_coronavirus_pandemic_idea
+			}
+			add_stability = -0.05
+		}
+		else = {
+			add_ideas = ISR_coronavirus_pandemic_idea4
+		}
+	}

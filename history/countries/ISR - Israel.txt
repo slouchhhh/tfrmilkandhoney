@@ -1,0 +1,405 @@
+﻿	capital = 454
+
+	oob = "ISR_2020"
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+			set_naval_oob = "ISR_2000_naval_mtg"
+		else = {
+			set_naval_oob = "ISR_2000_naval_legacy"
+		}
+	}
+
+	set_variable = { Russian_Influence = 0.00 }
+	set_variable = { Chinese_Influence = 0.05 }
+	set_variable = { American_Influence = 0.55 }
+	set_variable = { European_Influence = 0.10 }
+	set_variable = { PDO_Influence = 0.00 }
+	set_variable = { Sovereign_Influence = 0.30 }
+
+	set_research_slots = 4
+	set_convoys = 500
+	set_stability = 0.4
+	set_war_support = 0.7
+
+	set_country_flag = country_language_hebrew
+	set_country_flag = head_of_gov_ui_enabled
+
+	set_technology = {
+		## Infantry ##
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		upgraded_infantry_weapons1 = 1
+		infantry_rifle_upgrade2 = 1
+		infantry_rifle_upgrade3 = 1
+		support_weapons3 = 1
+		body_armor2 = 1
+		motorised_infantry = 1
+		infantry_rifle_upgrade = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		night_vision = 1
+		body_armor = 1
+		camouflage = 1
+		marines = 1
+		tech_mountaineers = 1
+		tech_rangers = 1
+		paratroopers = 1
+		camouflage2 = 1
+		mechanised_infantry1 = 1
+		mechanised_infantry2 = 1
+		light_mechanized_infantry1 = 1
+		light_mechanized_infantry2 = 1
+		
+		## Support Companies ##
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		
+		## Artillery ##
+		gw_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		tank_destroyer1 = 1
+		self_propelled_aa1 = 1
+		interwar_artillery = 1
+		sp_artillery1 = 1
+		
+		## Engineering ##
+		electronic_mechanical_engineering = 1
+		radio = 1
+		power_plants = 1
+		nuclear_reactors = 1
+		#nukes = 1
+		
+		## Industry ##
+		basic_machine_tools = 1
+		fuel_silos = 1
+		fuel_refining = 1
+		
+		## Doctrines ##
+		trade_interdiction = 1
+		
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		set_technology = {
+			main_battle_tank1 = 1
+			main_battle_tank2 = 1
+			main_battle_tank3 = 1
+			light_tank1 = 1
+			light_tank2 = 1
+			amphibious_tank1 = 1
+			amphibious_mechanized_infantry1 = 1
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			basic_medium_tank_chassis = 1
+			engine_tech_1 = 1
+			amphibious_tank_chassis = 1
+			apds_tech = 1
+			heat_tech = 1
+			apfsds_tech = 1
+			heatfs_tech = 1
+			legacy_armor_designs = 1
+			engine_tech_2 = 1
+		}
+	}
+	
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "ISR_2020_air_bba"
+			set_technology = {
+				aa_lmg = 1
+				aa_cannon_1 = 1
+				aa_hmg = 1
+				engines_1 = 1
+				engines_2 = 1
+				early_bombs = 1
+				guided_bombs = 1
+				aircraft_construction = 1
+				survivability_studies = 1
+				iw_small_airframe = 1
+				basic_small_airframe = 1
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				iw_large_airframe = 1
+			}
+		else = {
+			set_air_oob = "ISR_2020_air_legacy"
+			set_technology = {
+				CAS1 = 1
+				CAS2 = 1
+				fighter1 = 1
+				fighter2 = 1
+				fighter3 = 1
+				naval_bomber1 = 1
+				naval_bomber2 = 1
+				naval_bomber3 = 1
+				strategic_bomber1 = 1
+				strategic_bomber2 = 1
+				tactical_bomber1 = 1
+			}
+		}
+	}
+
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			early_destroyer = 1
+			basic_destroyer = 1
+			early_submarine = 1
+			basic_submarine = 1
+			transport = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_ship_hull_light = 1
+			basic_ship_hull_light = 1
+			early_ship_hull_submarine = 1
+			basic_ship_hull_submarine = 1
+			smoke_generator = 1
+			sonar = 1
+			basic_depth_charges = 1
+			basic_torpedo = 1
+			basic_battery = 1
+			basic_light_battery = 1
+			#basic_secondary_battery = 1
+			mtg_transport = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
+	}
+
+	add_ideas = {
+		ISR_gdp_fix
+		#National Spirits
+		idea_ISR_vanguard_of_judaism
+		idea_ISR_american_funding
+		ISR_netanyahu_corruption
+		#Laws
+		medium_conscription
+		#Development
+		higher_academic
+		higher_society
+		high_poverty
+		low_supervision
+	}
+	
+	recruit_character = ISR_reuven_rivlin_char
+	recruit_character = ISR_benjamin_netanyahu_char 
+	recruit_character = ISR_isaac_herzog_char
+	recruit_character = ISR_yousef_jabareen_char
+	recruit_character = ISR_avigdor_lieberman_char
+	recruit_character = ISR_aymen_odeh_char
+	recruit_character = ISR_benny_gantz_char
+	recruit_character = ISR_itamar_char
+	recruit_character = ISR_rafi_peretz_char
+	recruit_character = ISR_nobody_char
+
+	recruit_character = ISR_Sharon_Afek_char
+	recruit_character = ISR_Moti_Almoz_char
+	recruit_character = ISR_Dan_Goldfus_char
+	recruit_character = ISR_Tal_Rousso_char
+	recruit_character = ISR_Avi_Mizrahi_char
+	recruit_character = ISR_Herzi_Halevi_char
+	recruit_character = ISR_Aviv_Kochavi_char
+	recruit_character = ISR_Eran_Ortal_char
+	recruit_character = ISR_Yossi_Bachar_char
+	recruit_character = ISR_David_Saar_Salama_char
+	recruit_character = ISR_Eli_Sharvit_char
+
+	set_politics = {	
+		ruling_party = conservative
+		last_election = "2014.6.10"
+		election_frequency = 84
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		authoritarian_democrat = 5
+		conservative = 35
+		social_liberal = 5
+		social_democrat = 19
+		market_liberal = 31
+		libertarian_socialist = 5
+	}
+
+	send_embargo = PAL
+	send_embargo = HEZ
+	send_embargo = PER
+
+	add_opinion_modifier = {
+		target = PER
+		modifier = death_to_israel_ISR
+	}
+
+	add_opinion_modifier = {
+		target = SYR
+		modifier = death_to_israel_ISR
+	}
+
+	add_opinion_modifier = {
+		target = LBA
+		modifier = death_to_israel_ISR
+	}
+
+	### VARIANTS ###
+	# 2000 Start #
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		## Corvettes ##
+		create_equipment_variant = { #Corvette 2
+			name = "Sa'ar 5-class"
+			type = ship_hull_light_2
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+		## Submarines ##
+		create_equipment_variant = { #Diesel Sub 1
+			name = "Gal-class"
+			type = ship_hull_submarine_1
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { #Nuclear Sub 2
+			name = "Dolphin-class"
+			type = ship_hull_submarine_2
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_2
+				fixed_ship_engine_slot = sub_ship_engine_2
+				rear_1_custom_slot = ship_torpedo_sub_2
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "F-15E"
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+			icon = "GFX_USA_fighter2_medium"
+		}
+		create_equipment_variant = {
+			name = "F-16"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = hmg_defense_turret
+			}
+			icon = "GFX_USA_fighter3_medium"
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		create_equipment_variant = {
+			name = "Merkava Mk.4B"
+			type = modern_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_modern_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_cast_armor
+				engine_type_slot = tank_gas_turbine_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = wet_ammo_storage
+				special_type_slot_4 = extra_ammo_storage
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 6
+				tank_nsb_armor_upgrade = 3
+			}
+			icon = "gfx/interface/technologies/armor/MBT_2006_M1A2_Abrams.dds"
+		}
+		create_equipment_variant = {
+			name = "Eitan"
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_small_cannon
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = extra_ammo_storage
+				special_type_slot_3 = smoke_launchers
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 3
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "gfx/interface/technologies/armor/LT_2000_M1128_Stryker.dds"
+		}
+		
+	}
+
+	country_event = {
+		id = israel.4
+		days = 35
+	}
+
+	country_event = {
+		id = israel.9901
+		days = 4
+	}
+
+	country_event = {
+		id = israel.9902
+		days = 18
+	}

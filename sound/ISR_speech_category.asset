@@ -1,0 +1,6 @@
+	category = {
+		name = "Super_Event"
+		soundeffects = {
+			TFR_se_hava_nagila
+		}
+	}

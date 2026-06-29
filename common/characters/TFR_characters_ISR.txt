@@ -1,0 +1,490 @@
+	characters={
+		ISR_reuven_rivlin_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Reuven Rivlin.png"
+				}
+			}
+			country_leader = {
+				ideology = right_populism
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}	
+		ISR_benjamin_netanyahu_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/ISR_benjamin_netanyahu.png"
+				}
+			}
+			country_leader = {
+				ideology = right_populism
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		ISR_isaac_herzog_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Isaac Herzog.png"
+				}
+			}
+			country_leader = {
+				ideology = progressivism
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		ISR_yousef_jabareen_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Yousef Jabareen.png"
+				}
+			}
+			country_leader = {
+				ideology = communist_populism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader = {
+				ideology = left_nationalism
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		ISR_avigdor_lieberman_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Avigdor Lieberman.png"
+				}
+			}
+			country_leader = {
+				ideology = ultra_conservatism
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+
+		ISR_aymen_odeh_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Ayman Odeh.png"
+				}
+			}
+			country_leader = {
+				ideology = liberal_socialism
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+
+		ISR_benny_gantz_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Benny Gantz.png"
+				}
+			}
+			country_leader = {
+				ideology = civic_nationalism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader = {
+				ideology = liberal_socialism
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+
+		ISR_itamar_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Itamar Ben-Gvir.png"
+				}
+			}
+			country_leader = {
+				ideology = ethno_nationalism
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+
+		ISR_rafi_peretz_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ISR/Rafi Peretz.png"
+				}
+			}
+			country_leader = {
+				ideology = autocrat
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+
+		ISR_nobody_char = { #nobody
+			country_leader={
+				ideology = maoism
+				expire = "1.1.1.1"
+			}
+			country_leader={
+				ideology = falun_dafa
+				expire = "1.1.1.1"
+			}
+		}
+
+		### COMMANDERS
+
+		ISR_Avi_Mizrahi_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_Avi_Mizrahi.png"
+				}
+			}
+			field_marshal = {
+				traits = {
+					old_guard
+					career_officer
+					commando
+				}
+				skill = 3
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 4
+			}
+			advisor = {
+				slot = army_chief
+				idea_token = ISR_Avi_Mizrahi_army_chief
+				ledger = army
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+		}
+
+		ISR_Aviv_Kochavi_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_Aviv_Kochavi.png"
+				}
+			}
+			field_marshal = {
+				traits = {
+					inflexible_strategist
+					organizer
+					skilled_staffer
+					expert_delegator
+				}
+				skill = 4
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 4
+			}
+			advisor = {
+				slot = army_chief
+				idea_token = ISR_Aviv_Kochavi_army_chief
+				traits = {
+					army_chief_planning_2
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+		}
+
+		ISR_Dan_Goldfus_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_Dan_Goldfus.png"
+				}
+			}
+			field_marshal = {
+				traits = {
+					inflexible_strategist
+					trait_cautious
+				}
+				skill = 3
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			advisor = {
+				slot = high_command
+				idea_token = ISR_Dan_Goldfus_berger_high_command
+				ledger = army
+				traits = {
+					army_adaptibility_2
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+		}
+
+		ISR_David_Saar_Salama_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_David_Saar_Salama.png"
+				}
+			}
+			navy_leader = {
+				traits = {
+					old_guard_navy
+					chief_engineer
+					safety_first
+				}
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 2
+			}
+			advisor = {
+				slot = navy_chief
+				idea_token = ISR_David_Saar_Salama_navy_chief
+				ledger = navy
+				traits = {
+					navy_chief_reform_1
+				}
+				cost = 50
+				ai_will_do = {
+					factor = 2
+				}
+			}
+		}
+
+		ISR_Eli_Sharvit_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_Eli_Sharvit.png"
+				}
+			}
+			navy_leader = {
+				traits = {
+					seawolf
+					loading_drill_master
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				maneuvering_skill = 2
+				coordination_skill = 2
+			}
+			advisor = {
+				slot = navy_chief
+				idea_token = ISR_Eli_Sharvit_navy_chief
+				ledger = navy
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 2
+				}
+			}
+		}
+
+		ISR_Eran_Ortal_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_Eran_Ortal.png"
+				}
+			}
+			corps_commander = {
+				traits = {
+					brilliant_strategist
+					skilled_staffer
+				}
+				skill = 4
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			advisor = {
+				slot = army_chief
+				idea_token = ISR_Eran_Ortal_army_chief
+				traits = {
+					army_chief_reform_2
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+		}
+
+		ISR_Herzi_Halevi_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_Herzi_Halevi.png"
+				}
+			}
+			corps_commander = {
+				traits = {
+					organizer
+					adaptable
+					desert_fox
+					trickster
+					trait_engineer
+				}
+				skill = 4
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			advisor = {
+				slot = army_chief
+				idea_token = ISR_Herzi_Halevi_army_chief
+				traits = {
+					army_chief_entrenchment_1
+				}
+				cost = 50
+				ai_will_do = {
+					base = 1
+				}
+			}
+		}
+
+		ISR_Moti_Almoz_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_Moti_Almoz.png"
+				}
+			}
+			corps_commander = {
+				traits = {
+					brilliant_strategist
+					skilled_staffer
+				}
+				skill = 3
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			advisor = {
+				slot = high_command
+				idea_token = ISR_Moti_Almoz_high_command
+				ledger = army
+				traits = {
+					army_logistics_2
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+		}
+
+		ISR_Sharon_Afek_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_Sharon_Afek.png"
+				}
+			}
+			corps_commander = {
+				traits = {
+					trickster
+					trait_engineer
+					commando
+				}
+				skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 3
+			}
+			advisor = {
+				slot = high_command
+				idea_token = ISR_Sharon_Afek_high_command
+				traits = {
+					army_entrenchment_2
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+		}
+
+		ISR_Tal_Rousso_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_Tal_Rousso.png"
+				}
+			}
+			corps_commander = {
+				traits = {
+					organizer
+					naval_invader
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			advisor = {
+				slot = high_command
+				idea_token = ISR_Tal_Rousso_high_command
+				traits = {
+					army_regrouping_2
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+		}
+
+		ISR_Yossi_Bachar_char = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/generic/advisors/arab/arab_advisor4.png"
+					large = "gfx/Leaders/ISR/generals/ISR_Yossi_Bachar.png"
+				}
+			}
+			corps_commander = {
+				traits = {
+					naval_invader
+				}
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			advisor = {
+				slot = high_command
+				idea_token = ISR_Yossi_Bachar_high_command
+				traits = {
+					navy_amphibious_assault_1
+				}
+				cost = 100
+				ai_will_do = {
+					base = 1
+				}
+			}
+		}
+	}

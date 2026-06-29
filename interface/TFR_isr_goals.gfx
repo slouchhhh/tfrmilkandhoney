@@ -1,0 +1,98 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_focus_ISR_milk_and_honey"
+		texturefile = "gfx/interface/goals/ISR/ISR_milk_and_honey.png"
+	}
+	
+	spriteType = {
+		name = "GFX_ISR_american_weapons"
+		texturefile = "gfx/interface/goals/ISR/ISR_american_weapons.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_bibi_trial"
+		texturefile = "gfx/interface/goals/ISR/ISR_bibi_trial.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_defense_focus"
+		texturefile = "gfx/interface/goals/ISR/ISR_defense_focus.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_last_bastion"
+		texturefile = "gfx/interface/goals/ISR/ISR_last_bastion.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_levant_apc"
+		texturefile = "gfx/interface/goals/ISR/ISR_levant_apc.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_milk_and_honey"
+		texturefile = "gfx/interface/goals/ISR/ISR_milk_and_honey.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_protest_crackdown"
+		texturefile = "gfx/interface/goals/ISR/ISR_protest_crackdown.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_social_media"
+		texturefile = "gfx/interface/goals/ISR/ISR_social_media.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_soyjak_propaganda"
+		texturefile = "gfx/interface/goals/ISR/ISR_soyjak_propaganda.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_idf_logo"
+		texturefile = "gfx/interface/goals/ISR/ISR_idf_logo.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_covid_1"
+		texturefile = "gfx/interface/goals/ISR/ISR_covid_1.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_covid_3"
+		texturefile = "gfx/interface/goals/ISR/ISR_covid_3.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_covid_4"
+		texturefile = "gfx/interface/goals/ISR/ISR_covid_4.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_covid_5"
+		texturefile = "gfx/interface/goals/ISR/ISR_covid_5.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_bibi_america_sad"
+		texturefile = "gfx/interface/goals/ISR/ISR_bibi_america_sad.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_money"
+		texturefile = "gfx/interface/goals/ISR/ISR_money.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_foreign_love"
+		texturefile = "gfx/interface/goals/ISR/ISR_foreign_love.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_diamond_exchange"
+		texturefile = "gfx/interface/goals/ISR/ISR_diamond_exchange.png"
+	}
+
+}
+

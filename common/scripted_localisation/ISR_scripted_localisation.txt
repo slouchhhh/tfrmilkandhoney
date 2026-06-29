@@ -1,0 +1,232 @@
+defined_text = {
+	name = GetKnesset_Influence
+	text = {
+		trigger = {
+			ISR = {
+				has_country_flag = ISR_beiteinu_leaves_coalition
+			}
+			ISR = {
+				has_country_flag = ISR_torah_leaves_coalition
+			}
+		}
+		localization_key = ISR_Coalition_Likkud
+	}
+	text = {
+		trigger = {
+			ISR = {
+				has_country_flag = ISR_beiteinu_leaves_coalition
+			}
+		}
+		localization_key = ISR_Coalition_Likkud_and_Torah
+	}
+	text = {
+		trigger = {
+			ISR = {
+				has_country_flag = ISR_torah_leaves_coalition
+			}
+		}
+		localization_key = ISR_Coalition_Likkud_and_Beiteinu
+	}
+	text = {
+		localization_key = ISR_Coalition_Likkud_Beiteinu_and_Torah
+	}
+}
+
+defined_text = {
+	name = GetHadash_Support
+	text = {
+		trigger = {
+			check_variable = { ISR_hadash_support > 80 }
+		}
+		localization_key = ISR_hadash_support_very_high
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_hadash_support > 60 }
+		}
+		localization_key = ISR_hadash_support_high
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_hadash_support > 40 }
+		}
+		localization_key = ISR_hadash_support_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_hadash_support > 20 }
+		}
+		localization_key = ISR_hadash_support_low
+	}
+	text = {
+		localization_key = ISR_hadash_support_very_low
+	}
+}
+
+defined_text = {
+	name = GetHaavoda_Support
+	text = {
+		trigger = {
+			check_variable = { ISR_haavoda_support > 80 }
+		}
+		localization_key = ISR_haavoda_support_very_high
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_haavoda_support > 60 }
+		}
+		localization_key = ISR_haavoda_support_high
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_haavoda_support > 40 }
+		}
+		localization_key = ISR_haavoda_support_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_haavoda_support > 20 }
+		}
+		localization_key = ISR_haavoda_support_low
+	}
+	text = {
+		localization_key = ISR_haavoda_support_very_low
+	}
+}
+
+defined_text = {
+	name = GetYeshatid_Support
+	text = {
+		trigger = {
+			check_variable = { ISR_yeshatid_support > 80 }
+		}
+		localization_key = ISR_yeshatid_support_very_high
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_yeshatid_support > 60 }
+		}
+		localization_key = ISR_yeshatid_support_high
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_yeshatid_support > 40 }
+		}
+		localization_key = ISR_yeshatid_support_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_yeshatid_support > 20 }
+		}
+		localization_key = ISR_yeshatid_support_low
+	}
+	text = {
+		localization_key = ISR_yeshatid_support_very_low
+	}
+}
+
+defined_text = {
+	name = GetLikkud_Support
+	text = {
+		trigger = {
+			check_variable = { ISR_likkud_support > 80 }
+		}
+		localization_key = ISR_likkud_support_very_high
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_likkud_support > 60 }
+		}
+		localization_key = ISR_likkud_support_high
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_likkud_support > 40 }
+		}
+		localization_key = ISR_likkud_support_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_likkud_support > 20 }
+		}
+		localization_key = ISR_likkud_support_low
+	}
+	text = {
+		localization_key = ISR_likkud_support_very_low
+	}
+}
+
+defined_text = {
+	name = GetYisrael_Support
+	text = {
+		trigger = {
+			check_variable = { ISR_yisrael_support > 80 }
+		}
+		localization_key = ISR_yisrael_support_very_high
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_yisrael_support > 60 }
+		}
+		localization_key = ISR_yisrael_support_high
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_yisrael_support > 40 }
+		}
+		localization_key = ISR_yisrael_support_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_yisrael_support > 20 }
+		}
+		localization_key = ISR_yisrael_support_low
+	}
+	text = {
+		localization_key = ISR_yisrael_support_very_low
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+### SUPER EVENTS ###
+
+defined_text = {
+	name = get_super_event_title_isr
+	text = { 
+		trigger = {
+			has_country_flag = ISR_arab_israeli_war_started_se
+		}
+		localization_key = "ISR_arab_israeli_war"
+	}
+}
+
+defined_text = {
+	name = get_superevent_quote_isr
+	text = { 
+		trigger = {
+			has_country_flag = ISR_arab_israeli_war_started_se
+		}
+		localization_key = "ISR_arab_israeli_war_text"
+	}
+}
+
+defined_text = {
+	name = get_superevent_buton_isr 	
+	text = { 
+		trigger = {
+			has_country_flag = ISR_arab_israeli_war_started_se
+		}
+		localization_key = "ISR_arab_israeli_war_button"
+	}
+}

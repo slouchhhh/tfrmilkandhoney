@@ -1,0 +1,4 @@
+	sound = {
+		name = "TFR_se_hava_nagila"
+		file = "Super_Events/TFR_hava_nagila.wav"
+	}

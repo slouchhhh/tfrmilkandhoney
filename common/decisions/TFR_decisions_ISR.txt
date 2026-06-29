@@ -1,0 +1,196 @@
+ISR_knesset_category = {
+	
+}
+
+ISR_arab_israeli_war_category = {
+	ISR_arab_israeli_war_timeout = {
+		icon = GFX_decision_generic_ignite_civil_war
+		allowed = {
+			tag = ISR
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			has_global_flag = ISR_arab_israeli_war_started_global
+			NOT = {
+				has_country_flag = ISR_arab_israeli_war_over
+			}
+		}
+		cancel_trigger = {
+			has_country_flag = ISR_arab_israeli_war_over
+		}
+		
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 200
+		timeout_effect = {
+			if = {
+				limit = {
+					ISR = {
+						surrender_progress > 0.2
+					}
+				}
+				country_event = {
+					id = israel.7
+				}
+			}
+			else_if = {
+				limit = {
+					811 = {
+						is_fully_controlled_by = ISR
+					}
+					915 = {
+						is_fully_controlled_by = ISR
+					}
+				}
+				country_event = {
+					id = israel.8
+				}
+			}
+			else = {
+				country_event = {
+					id = israel.6
+				}
+			}
+		}
+	}
+}
+
+ISR_covid_category = {
+	ISR_worsening_covid = {
+		icon = generic_vaccine
+		allowed = {
+			tag = ISR
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			has_country_flag = ISR_pandemic_started
+			NOT = {
+				has_country_flag = ISR_no_coronavirus
+			}
+		}
+		cancel_trigger = {
+			has_country_flag = ISR_no_coronavirus
+		}
+		
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 60
+		timeout_effect = {
+			ISR_increase_corona = yes
+			ISR = {	
+				activate_mission = ISR_worsening_covid
+			}
+		}
+	}
+
+	ISR_enforce_lockdowns = {
+		icon = generic_mask
+		available = {
+			has_completed_focus = ISR_enforce_lockdowns
+		}
+		visible = {
+			has_completed_focus = ISR_covid_in_israel
+			NOT = {
+				has_country_flag = ISR_no_coronavirus
+			}
+		}
+		fire_only_once = no
+		cost = 25
+		days_remove = 14
+		days_re_enable = 14
+		complete_effect = {
+			custom_effect_tooltip = ISR_yeshatid_support1_tooltip
+			custom_effect_tooltip = ISR_haavoda_support1_tooltip
+			custom_effect_tooltip = ISR_coronadecrease_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_yeshatid_support
+					value = 5  
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_haavoda_support
+					value = 5
+				}
+			}
+		}
+		remove_effect = {
+			ISR = {
+				ISR_decrease_corona = yes
+			}
+		}
+		ai_will_do = {
+			base = 10000
+		}
+	}
+
+	ISR_distribute_masks = {
+		icon = generic_mask
+		available = {
+			has_completed_focus = ISR_covid_in_israel
+		}
+		visible = {
+			has_completed_focus = ISR_covid_in_israel
+			NOT = {
+				has_country_flag = ISR_no_coronavirus
+			}
+		}
+		fire_only_once = no
+		cost = 20
+		days_remove = 10
+		days_re_enable = 30
+		complete_effect = {
+			ISR = {
+				ISR_decrease_corona = yes
+			}
+		}
+		ai_will_do = {
+			base = 100000
+		}
+	}
+
+	ISR_ban_large_gatherings = {
+		icon = generic_mask
+		available = {
+			has_completed_focus = ISR_crush_protests
+		}
+		visible = {
+			has_completed_focus = ISR_covid_in_israel
+			NOT = {
+				has_country_flag = ISR_no_coronavirus
+			}
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 10
+		days_re_enable = 30
+		complete_effect = {
+			ISR = {
+				ISR_decrease_corona = yes
+			}
+			custom_effect_tooltip = ISR_yisrael_support1_tooltip
+			custom_effect_tooltip = ISR_haavoda_negsupport1_tooltip
+			custom_effect_tooltip = ISR_coronadecrease_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_yisrael_support
+					value = 5  
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_haavoda_support
+					value = -5
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10000
+		}
+	}
+}

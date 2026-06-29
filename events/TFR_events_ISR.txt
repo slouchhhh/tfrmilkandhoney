@@ -1,0 +1,385 @@
+﻿add_namespace = israel
+
+news_event = { #arab israel war super event
+	id = israel.12345
+	title = israel.12345.t
+	desc = israel.12345.d
+	picture = GFX_news_retreat_from_lebanon
+	major = yes
+	fire_only_once = no
+	is_triggered_only = yes
+	option = { #send money to aipac please
+		name = israel.12345.a
+		set_country_flag = ISR_arab_israeli_war_started_se
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				scoped_sound_effect = TFR_se_hava_nagila
+				scoped_play_song = "one_minute_of_silence"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = israel.1234
+	title = israel.1234.t
+	desc = israel.1234.d
+	picture = GFX_news_retreat_from_lebanon
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = third_intifada
+		set_global_flag = ISR_arab_israeli_war_started_global
+		ISR = {
+			set_country_flag = ISR_arab_israeli_war_started
+		}
+		PAL = {
+			set_country_flag = ISR_arab_israeli_war_started
+		}
+	}
+	
+	option = {
+		name = israel.1234.a
+		create_faction = ANTI_ISRAEL_FACTION
+		PAL = {
+			create_faction = ANTI_ISRAEL_FACTION
+			add_to_faction = JOR
+			add_to_faction = EGY
+			add_to_faction = SYR
+			add_to_faction = HEZ
+			set_politics = {
+				ruling_party = nationalist
+				elections_allowed = no
+			}
+		}
+		ISR = {
+			create_faction = PRO_ISRAEL_FACTION
+		}
+		PAL = {
+			declare_war_on = { 
+				target = ISR
+				type = annex_everything 
+			}
+		}
+		PER = {
+			declare_war_on = { 
+				target = ISR
+				type = annex_everything 
+			}
+		}
+		news_event = { 
+			id = israel.12345 
+			hours = 24 
+		}
+		hidden_effect = {
+			EGY = {
+				country_event = {
+					id = israel.9
+				}
+			}
+			ISR = {
+				if = {
+					limit = {
+						has_country_flag = ISR_total_mob_flag
+					}
+					load_oob = "ISR_Total_Mob"
+				}
+				set_country_flag = ISR_initial_tree_over
+				set_country_flag = ISR_focus_tree_first_war
+			}
+		}
+	}
+}
+
+country_event = { #opening event
+	id = israel.1
+	title = israel.1.t
+	desc = israel.1.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #shabbas goy
+		name = israel.1.a
+		
+	}
+}
+
+country_event = { #right left or status quo
+	id = israel.2
+	title = israel.2.t
+	desc = israel.2.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.2.a
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = ISR_statusquo_government_flag
+	}
+	option = { 
+		name = israel.2.b
+		set_country_flag = ISR_right_government_flag
+	}
+	option = { 
+		name = israel.2.c
+		set_country_flag = ISR_left_government_flag
+	}
+}
+
+country_event = { #state of emergency
+	id = israel.3
+	title = israel.3.t
+	desc = israel.3.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.3.a
+		ai_chance = {
+			base = 100
+		}
+		
+	}
+}
+
+country_event = { #covid event
+	id = israel.4
+	title = israel.4.t
+	desc = israel.4.d
+	picture = GFX_Generic_COVID1
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.4.a
+		add_stability = -0.15
+		add_political_power = -50
+		ISR = {
+			add_ideas = ISR_coronavirus_pandemic_idea1
+			set_country_flag = ISR_pandemic_started
+		}
+		hidden_effect = {
+			ISR = {
+				activate_mission = ISR_worsening_covid
+				country_event = {
+					id = israel.9903
+					days = 13
+				}
+			}
+			
+		}
+	}
+}
+
+country_event = { #covid over event
+	id = israel.5
+	title = israel.5.t
+	desc = israel.5.d
+	picture = GFX_Generic_COVID2
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.5.a
+		add_stability = 0.05
+		
+	}
+}
+
+country_event = { #white peace STALEMATE
+	id = israel.6
+	title = israel.6.t
+	desc = israel.6.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.6.a
+		every_enemy_country = {
+            white_peace = ROOT
+        }
+		PAL = {
+			dismantle_faction = yes
+			set_country_flag = ISR_arab_israeli_war_over
+		}
+		ISR = {
+			set_country_flag = ISR_arab_israeli_war_over
+		}
+	}
+}
+
+country_event = { #two state solution PAL VICTORY
+	id = israel.7
+	title = israel.7.t
+	desc = israel.7.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.7.a
+		every_enemy_country = {
+            white_peace = ROOT
+        }
+		PAL = {
+            transfer_state = 810
+			transfer_state = 1111
+			transfer_state = 812
+			transfer_state = 914
+			set_country_flag = ISR_arab_israeli_war_over
+        }
+		ISR = {
+			set_country_flag = ISR_arab_israeli_war_over
+		}
+		SYR = {
+            transfer_state = 881
+        }
+		PAL = {
+			dismantle_faction = yes
+		}
+	}
+}
+
+country_event = { #tpd ISR VICTORY
+	id = israel.8
+	title = israel.8.t
+	desc = israel.8.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.8.a
+		every_enemy_country = {
+            white_peace = ROOT
+        }
+		ISR = {
+            transfer_state = 811
+			transfer_state = 915
+			set_country_flag = ISR_arab_israeli_war_over
+        }
+		PAL = {
+			dismantle_faction = yes
+			set_country_flag = ISR_arab_israeli_war_over
+		}
+	}
+}
+
+country_event = { #egypt leaves war warning
+	id = israel.9
+	title = israel.9.t
+	desc = israel.9.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.9.a
+		add_war_support = -0.05
+		hidden_effect = {
+			EGY = {
+				country_event = {
+					id = israel.11
+					days = 110
+				}
+			}
+		}
+	}
+}
+
+country_event = { #egypt leaves war for realsies
+	id = israel.10
+	title = israel.10.t
+	desc = israel.10.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		EGY = {
+			has_country_flag = EGY_leave_the_damn_war
+			has_war_with = ISR
+		}
+    }
+	option = { 
+		name = israel.10.a
+		EGY = {
+			white_peace = ISR
+			leave_faction = yes
+		}
+	}
+}
+
+country_event = { #egypt leaves war warning 2
+	id = israel.11
+	title = israel.1.t
+	desc = israel.11.d
+	picture = GFX_Palestinian_Riot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.1.a
+		EGY = {
+			set_country_flag = EGY_leave_the_damn_war
+		}
+	}
+}
+
+country_event = { #first flavor
+	id = israel.9901
+	title = israel.9901.t
+	desc = israel.9901.d
+	picture = GFX_FRA_french_soldier
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.9901.a
+		add_war_support = 0.025
+		
+	}
+}
+
+country_event = { #blueandwhite flavor
+	id = israel.9902
+	title = israel.9902.t
+	desc = israel.9902.d
+	picture = GFX_FRA_french_soldier
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.9902.a
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.02
+		}
+		
+	}
+}
+
+country_event = { #covid flavor
+	id = israel.9903
+	title = israel.9903.t
+	desc = israel.9903.d
+	picture = GFX_Covid-19_Cases_Increase
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.9903.a
+		add_stability = -0.01
+		
+	}
+}

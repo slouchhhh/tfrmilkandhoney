@@ -1,0 +1,341 @@
+ideas = {
+	
+	country = {
+		
+		idea_ISR_vanguard_of_judaism = {
+			picture = ISR_vanguard_of_judaism
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.005
+				political_power_gain = 0.25
+				planning_speed = 0.25
+				army_morale_factor = 0.10
+				drift_defence_factor = 0.25
+				war_support_factor = 0.2
+			}
+			
+		}
+
+		ISR_netanyahu_corruption = {
+			picture = ISR_netanyahu_corruption
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_weekly = -0.0025
+				market_liberal_drift = 0.01
+				social_liberal_drift = 0.01
+				social_democrat_drift = 0.01
+				disabled_ideas = 1
+			}
+			
+		}
+
+		ISR_netanyahu_corruption1 = {
+			picture = ISR_netanyahu_corruption
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.3
+				stability_weekly = -0.0020
+				market_liberal_drift = 0.01
+				social_liberal_drift = 0.01
+				social_democrat_drift = 0.01
+				disabled_ideas = 1
+			}
+		}
+
+		ISR_we_love_bibi = {
+			picture = ISR_bibi_love
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				opinion_gain_monthly_factor = 0.25
+				trade_opinion_factor = 0.15
+				improve_relations_maintain_cost_factor = 0.25
+				custom_modifier_tooltip = ISR_volunteer_tt
+			}
+		}
+
+		idea_ISR_american_funding = {
+			picture = ISR_usa_fund
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.20
+				income_growth_factor = 0.33
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.125
+				production_speed_infrastructure_factor = 0.075
+				production_speed_industrial_complex_factor = 0.075
+				military_factory_donations = 8
+				country_resource_oil = 20
+				country_resource_steel = 60
+				country_resource_tungsten = 10
+			}
+			
+		}
+		ISR_french_funding_idea = {
+			picture = ISR_fra_fund
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				income_growth_factor = 0.11
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.025
+				production_speed_infrastructure_factor = 0.025
+				production_speed_industrial_complex_factor = 0.025
+				military_factory_donations = 2
+			}
+			
+		}
+
+		ISR_coronavirus_pandemic_idea = {
+			picture = generic_covid
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_factory_max_efficiency_factor = -0.25
+				business_value_factor = -0.15
+				monthly_population = -0.14
+				stability_factor = -0.25
+			}
+		}
+		
+		ISR_coronavirus_pandemic_idea1 = {
+			picture = generic_covid
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = -0.2
+				business_value_factor = -0.12
+				monthly_population = -0.11
+				stability_factor = -0.2
+			}
+		}
+		
+		ISR_coronavirus_pandemic_idea2 = {
+			picture = generic_covid
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_factory_max_efficiency_factor = -0.15
+				business_value_factor = -0.09
+				monthly_population = -0.08
+				stability_factor = -0.15
+			}
+		}
+		
+		ISR_coronavirus_pandemic_idea3 = {
+			picture = generic_covid
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+				business_value_factor = -0.06
+				monthly_population = -0.05
+				stability_factor = -0.1
+			}
+		}
+		
+		ISR_coronavirus_pandemic_idea4 = {
+			picture = generic_covid
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				business_value_factor = -0.03
+				monthly_population = -0.02
+				stability_factor = -0.05
+			}
+		}
+		
+		ISR_idf_funding = {
+			picture = ISR_idf
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				military_development_monthly = 0.02
+				military_factory_donations = 2
+				experience_gain_army_factor = 0.15
+				society_development_monthly = -0.005
+				industrial_development_monthly = -0.0025
+			}
+		}
+
+		ISR_covid_relief = {
+			picture = generic_economic_reinvigoration
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
+				industrial_development_monthly = 0.0075
+			}
+		}
+	}
+	
+}

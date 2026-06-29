@@ -1,0 +1,839 @@
+focus_tree = {
+	id = ISR_initial_tree
+	country = {
+		base = 0
+		modifier = {
+			add = 10
+			tag = ISR
+		}
+		
+	}
+
+	focus = {
+		id = ISR_request_parliamentary_immunity
+		icon = GFX_ISR_bibi_trial
+		x = 6
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		cancelable = no
+		ai_will_do = {
+			base = 10
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			
+			add_political_power = 50
+			ISR = {
+				country_event = {
+					id = israel.1
+				}
+
+				custom_effect_tooltip = ISR_parliament_unlock
+				set_variable = {
+					var = ISR_yisrael_support
+					value = 22
+				}
+				set_variable = {
+					var = ISR_likkud_support
+					value = 50
+				}
+				set_variable = {
+					var = ISR_yeshatid_support
+					value = 22
+				}
+				set_variable = {
+					var = ISR_haavoda
+					value = 5
+				}
+				set_variable = {
+					var = ISR_hadash
+					value = 5
+				}
+				set_variable = {
+					var = ISR_yisrael_seats
+					value = 9
+				}
+				set_variable = {
+					var = ISR_likkud_seats
+					value = 36
+				}
+				set_variable = {
+					var = ISR_yeshatid_seats
+					value = 33
+				}
+				set_variable = {
+					var = ISR_haavoda_seats
+					value = 7
+				}
+				set_variable = {
+					var = ISR_hadash_seats
+					value = 2
+				}
+				set_variable = {
+					var = ISR_otherparties_seats
+					value = 33
+				}
+			}
+		}
+	}
+	focus = {
+		id = ISR_the_idf
+		icon = GFX_ISR_idf_logo
+		x = 0
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_request_parliamentary_immunity
+		prerequisite = {
+			focus = ISR_request_parliamentary_immunity
+		}
+		ai_will_do = {
+			base = 50
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			army_experience = 25
+			add_timed_idea = {
+				idea = ISR_idf_funding
+				days = 365
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_reinforce_golan
+		icon = GFX_ISR_defense_focus
+		x = -1
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_the_idf
+		prerequisite = {
+			focus = ISR_the_idf
+		}
+		ai_will_do = {
+			base = 50
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 15
+			}
+			add_debt_with_inflation = yes
+			custom_effect_tooltip = ISR_fortify_golan_tt
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				name = mech_army_bonus
+				technology = tech_combat_engineers
+			}
+			hidden_effect = {
+				881 = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 13321
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+				1111 = {
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 1065
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 13906
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_purchase_american_weapons
+		icon = GFX_ISR_american_weapons
+		x = 1
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_the_idf
+		prerequisite = {
+			focus = ISR_the_idf
+		}
+		ai_will_do = {
+			base = 50
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 34
+			}
+			add_debt_with_inflation = yes
+			add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 4000 producer = USA }
+			add_equipment_to_stockpile = {type = support_equipment amount = 300 producer = USA }
+			add_equipment_to_stockpile = {type = artillery_equipment_1 amount = 200 producer = USA }
+			add_equipment_to_stockpile = {type = anti_tank_equipment_1 amount = 300 producer = USA }
+			add_equipment_to_stockpile = {type = anti_air_equipment_1 amount = 300 producer = USA }
+			add_equipment_to_stockpile = {type = motorized_equipment_1 amount = 400 producer = USA }
+			add_equipment_to_stockpile = {type = light_mechanized_equipment_1 amount = 200 producer = USA }
+			add_equipment_to_stockpile = {type = modern_tank_artillery_equipment_1 amount = 75 producer = USA }
+		}
+	}
+
+	focus = {
+		id = ISR_prepare_for_levant_war
+		icon = GFX_ISR_levant_apc
+		x = -1
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_purchase_american_weapons
+		prerequisite = {
+			focus = ISR_purchase_american_weapons
+		}
+		prerequisite = {
+			focus = ISR_reinforce_golan
+		}
+		ai_will_do = {
+			base = 50
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ISR_mobalization_tt
+			set_country_flag = ISR_total_mob_flag
+		}
+	}
+
+	focus = {
+		id = ISR_covid_in_israel
+		icon = GFX_ISR_covid_1
+		x = -2
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_request_parliamentary_immunity
+		prerequisite = {
+			focus = ISR_request_parliamentary_immunity
+		}
+		ai_will_do = {
+			base = 50000
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		bypass = {
+			has_country_flag = ISR_pandemic_started
+		}
+		enable_automatic_bypass = yes
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {	
+			custom_effect_tooltip = ISR_corona_tt
+			ISR = {	
+				activate_mission = ISR_worsening_covid
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_enforce_lockdowns
+		icon = GFX_ISR_covid_3
+		x = -1
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_covid_in_israel
+		prerequisite = {
+			focus = ISR_covid_in_israel
+		}
+		available = {
+			has_country_flag = ISR_pandemic_started
+		}
+		
+		ai_will_do = {
+			base = 500
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = ISR_yeshatid_support1_tooltip
+			custom_effect_tooltip = ISR_haavoda_support1_tooltip
+			add_days_mission_timeout = {
+				mission = ISR_worsening_covid
+				days = 35
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_yeshatid_support
+					value = 5  
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_haavoda_support
+					value = 5
+				}
+			}
+			unlock_decision_tooltip = ISR_enforce_lockdowns
+		}
+	}
+
+	focus = {
+		id = ISR_crush_protests
+		icon = GFX_ISR_protest_crackdown
+		x = 0
+		y = 2
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_covid_in_israel
+		prerequisite = {
+			focus = ISR_covid_in_israel
+		}
+		prerequisite = {
+			focus = ISR_enforce_lockdowns
+		}
+		available = {
+			has_country_flag = ISR_pandemic_started
+		}
+		
+		ai_will_do = {
+			base = 500
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = ISR_haavoda_negsupport1_tooltip
+			custom_effect_tooltip = ISR_likkud_support2_tooltip
+			custom_effect_tooltip = ISR_coronadecrease_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_haavoda_support
+					value = -5
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_likkud_support
+					value = 10
+				}
+			}
+			unlock_decision_tooltip = ISR_ban_large_gatherings
+		}
+	}
+
+	focus = {
+		id = ISR_state_bailouts
+		icon = GFX_ISR_covid_4
+		x = -1
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_enforce_lockdowns
+		prerequisite = {
+			focus = ISR_enforce_lockdowns
+		}
+		available = {
+			has_country_flag = ISR_pandemic_started
+		}
+		
+		ai_will_do = {
+			base = 500
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 4
+			}
+			add_debt_with_inflation = yes
+			add_timed_idea = {
+				idea = ISR_covid_relief
+				days = 200
+			}
+			custom_effect_tooltip = ISR_yisrael_negsupport1_tooltip
+			custom_effect_tooltip = ISR_haavoda_support2_tooltip
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_haavoda_support
+					value = 10
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_yisrael_support
+					value = -5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_covid_eradicated
+		icon = GFX_ISR_covid_5
+		x = 1
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_state_bailouts
+		prerequisite = {
+			focus = ISR_state_bailouts	
+			focus = ISR_crush_protests
+		}
+		available = {
+			has_country_flag = ISR_no_coronavirus
+		}
+		
+		ai_will_do = {
+			base = 500
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			add_stability = .15
+			custom_effect_tooltip = ISR_yisrael_support1_tooltip
+			custom_effect_tooltip = ISR_haavoda_support1_tooltip
+			custom_effect_tooltip = ISR_yeshatid_support2_tooltip
+			custom_effect_tooltip = ISR_likkud_support1_tooltip
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_haavoda_support
+					value = 5
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_yeshatid_support
+					value = 10
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_likkud_support
+					value = 10
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_yisrael_support
+					value = 5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_sweeten_bibis_image
+		icon = GFX_ISR_milk_and_honey
+		x = 2
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_request_parliamentary_immunity
+		prerequisite = {
+			focus = ISR_request_parliamentary_immunity
+		}
+		ai_will_do = {
+			base = 50
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = ISR_netanyahu_corruption
+				add_idea = ISR_netanyahu_corruption1
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_increase_foreign_support
+		icon = GFX_ISR_foreign_love
+		x = 1
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_sweeten_bibis_image
+		prerequisite = {
+			focus = ISR_sweeten_bibis_image
+		}
+		ai_will_do = {
+			base = 50
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			add_ideas = ISR_we_love_bibi
+			GER = {
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ISR"
+					value = 400
+				}
+			}
+			FRA = {
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ISR"
+					value = 400
+				}
+			}
+			ENG = {
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ISR"
+					value = 400
+				}
+			}
+			RAJ = {
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = "ISR"
+					value = 400
+				}
+			}
+			ISR = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = "PAL"
+					value = 1000
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_promote_jewish_business
+		icon = GFX_ISR_money
+		x = 4
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_sweeten_bibis_image
+		prerequisite = {
+			focus = ISR_sweeten_bibis_image
+		}
+		ai_will_do = {
+			base = 45
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			add_stability = 0.05
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = 0.05
+			}
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.05
+			}
+			add_society_development = yes
+			add_industrial_development = yes
+			custom_effect_tooltip = ISR_likkud_support2_tooltip
+			custom_effect_tooltip = ISR_yisrael_support2_tooltip
+			custom_effect_tooltip = ISR_yeshatid_negsupport1_tooltip
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_likkud_support
+					value = 10
+				}
+				add_to_variable = {
+					var = ISR_yisrael_support
+					value = 10
+				}
+				add_to_variable = {
+					var = ISR_yeshatid_support
+					value = -5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_diamond_exchange
+		icon = GFX_ISR_diamond_exchange
+		x = 0
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_promote_jewish_business
+		prerequisite = {
+			focus = ISR_promote_jewish_business
+		}
+		ai_will_do = {
+			base = 45
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			454 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = 0.15
+			}
+			add_industrial_development = yes
+		}
+	}
+
+	focus = {
+		id = ISR_target_online_forums
+		icon = GFX_ISR_soyjak_propaganda
+		x = -1
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_increase_foreign_support
+		prerequisite = {
+			focus = ISR_increase_foreign_support
+		}
+		mutually_exclusive = {
+			focus = ISR_target_mainstream_platforms
+		}
+		ai_will_do = {
+			base = 50
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.02
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_target_mainstream_platforms
+		icon = GFX_ISR_social_media
+		x = 1
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_increase_foreign_support
+		prerequisite = {
+			focus = ISR_increase_foreign_support
+		}
+		mutually_exclusive = {
+			focus = ISR_target_online_forums
+		}
+		ai_will_do = {
+			base = 50
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.04
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_our_greatest_ally
+		icon = GFX_ISR_bibi_america_sad
+		x = 0
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		relative_position_id = ISR_target_online_forums
+		prerequisite = {
+			focus = ISR_target_online_forums
+			focus = ISR_target_mainstream_platforms
+		}
+		prerequisite = {
+			focus = ISR_prepare_for_levant_war
+		}
+		available = {
+			has_global_flag = USA_american_civil_war_global
+		}
+		ai_will_do = {
+			base = 50
+			modifier = {
+				date > 2021.01.01
+				factor = 5
+			}
+		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = ISR_initial_tree_over
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			remove_ideas = ISR_netanyahu_corruption
+			ISR = {
+				country_event = {
+					id = israel.3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_war_for_survival
+		icon = GFX_ISR_last_bastion
+		x = 16
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		cancelable = no
+		ai_will_do = {
+			base = 10
+		}
+		allow_branch = {
+			has_country_flag = ISR_focus_tree_first_war
+		}
+		completion_reward = {
+			remove_ideas = ISR_netanyahu_corruption
+		}
+	}
+}
