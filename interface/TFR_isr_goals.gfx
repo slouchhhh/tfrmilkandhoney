@@ -94,5 +94,40 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/ISR/ISR_diamond_exchange.png"
 	}
 
+	spriteType = {
+		name = "GFX_ISR_appeal_to_un"
+		texturefile = "gfx/interface/goals/ISR/ISR_appeal_to_un.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_burning_city"
+		texturefile = "gfx/interface/goals/ISR/ISR_burning_city.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_crush_palestine"
+		texturefile = "gfx/interface/goals/ISR/ISR_crush_palestine.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_girls_propaganda"
+		texturefile = "gfx/interface/goals/ISR/ISR_girls_propaganda.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_prop_posters"
+		texturefile = "gfx/interface/goals/ISR/ISR_prop_posters.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_weapons_future"
+		texturefile = "gfx/interface/goals/ISR/ISR_weapons_future.png"
+	}
+
+	spriteType = {
+		name = "GFX_ISR_tank_soldier"
+		texturefile = "gfx/interface/goals/ISR/ISR_tank_soldier.png"
+	}
+
 }
 

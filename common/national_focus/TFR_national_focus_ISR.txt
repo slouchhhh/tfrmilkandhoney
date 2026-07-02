@@ -47,11 +47,11 @@ focus_tree = {
 					value = 22
 				}
 				set_variable = {
-					var = ISR_haavoda
+					var = ISR_haavoda_support
 					value = 5
 				}
 				set_variable = {
-					var = ISR_hadash
+					var = ISR_hadash_support
 					value = 5
 				}
 				set_variable = {
@@ -809,7 +809,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
-			remove_ideas = ISR_netanyahu_corruption
 			ISR = {
 				country_event = {
 					id = israel.3
@@ -820,8 +819,8 @@ focus_tree = {
 
 	focus = {
 		id = ISR_war_for_survival
-		icon = GFX_ISR_last_bastion
-		x = 16
+		icon = GFX_ISR_burning_city
+		x = 4
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -834,6 +833,179 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = ISR_netanyahu_corruption
+		}
+	}
+
+	focus = {
+		id = ISR_idf_legions
+		icon = GFX_ISR_last_bastion
+		x = 2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = ISR_war_for_survival
+		prerequisite = {
+			focus = ISR_war_for_survival
+		}
+		
+		ai_will_do = {
+			base = 50
+		}
+		allow_branch = {
+			has_country_flag = ISR_focus_tree_first_war
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ISR_women_on_the_front
+		icon = GFX_ISR_girls_propaganda
+		x = -1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = ISR_idf_legions
+		prerequisite = {
+			focus = ISR_idf_legions
+		}
+		ai_will_do = {
+			base = 50
+		}
+		
+		allow_branch = {
+			has_country_flag = ISR_focus_tree_first_war
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ISR_well_equipped_army
+		icon = GFX_ISR_weapons_future
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = ISR_idf_legions
+		prerequisite = {
+			focus = ISR_idf_legions
+		}
+		ai_will_do = {
+			base = 50
+		}
+		
+		allow_branch = {
+			has_country_flag = ISR_focus_tree_first_war
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ISR_spread_propaganda
+		icon = GFX_ISR_prop_posters
+		x = -2
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = ISR_war_for_survival
+		prerequisite = {
+			focus = ISR_war_for_survival
+		}
+		
+		ai_will_do = {
+			base = 50
+		}
+		allow_branch = {
+			has_country_flag = ISR_focus_tree_first_war
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ISR_appeal_to_the_un
+		icon = GFX_ISR_appeal_to_un
+		x = -3
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = ISR_war_for_survival
+		prerequisite = {
+			focus = ISR_spread_propaganda
+		}
+		ai_will_do = {
+			base = 50
+		}
+		mutually_exclusive = {
+			focus = ISR_seize_the_opportunity
+		}
+		allow_branch = {
+			has_country_flag = ISR_focus_tree_first_war
+		}
+		completion_reward = {
+			add_days_mission_timeout = {
+				mission = ISR_arab_israeli_war_timeout
+				days = -30
+			}
+		}
+	}
+
+	focus = {
+		id = ISR_seize_the_opportunity
+		icon = GFX_ISR_crush_palestine
+		x = -1
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = ISR_war_for_survival
+		prerequisite = {
+			focus = ISR_spread_propaganda
+		}
+		ai_will_do = {
+			base = 50
+		}
+		mutually_exclusive = {
+			focus = ISR_appeal_to_the_un
+		}
+		allow_branch = {
+			has_country_flag = ISR_focus_tree_first_war
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = ISR_one_final_push
+		icon = GFX_ISR_tank_soldier
+		x = 0
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		relative_position_id = ISR_war_for_survival
+		prerequisite = {
+			focus = ISR_seize_the_opportunity
+			focus = ISR_appeal_to_the_un
+		}
+		prerequisite = {
+			focus = ISR_well_equipped_army
+			focus = ISR_women_on_the_front
+		}
+		ai_will_do = {
+			base = 50
+		}
+		
+		allow_branch = {
+			has_country_flag = ISR_focus_tree_first_war
+		}
+		completion_reward = {
+			
 		}
 	}
 }

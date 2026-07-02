@@ -4878,7 +4878,7 @@ USA_civil_war_begins = {
 	PAL = {
 		country_event = {
 			id = israel.1234
-			days = 12
+			days = 21
 		}
 	}
 	ISR = {
