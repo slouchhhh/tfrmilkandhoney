@@ -1,5 +1,28 @@
 ISR_knesset_category = {
-	
+	ISR_lobby_for_likkud = {
+		icon = generic_propaganda_campaigns
+		
+		fire_only_once = no
+		cost = 50
+		days_re_enable = 31
+		complete_effect = {
+			ISR_likkud_twoseats_tooltip
+			hidden_effect = {
+				add_to_variable = {
+					var = ISR_likkud_seats
+					value = 2
+				}
+				subtract_from_variable = {
+					var = ISR_otherparties_seats
+					value = 2
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 10
+		}
+	}
 }
 
 ISR_arab_israeli_war_category = {
@@ -23,7 +46,7 @@ ISR_arab_israeli_war_category = {
 		
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 200
+		days_mission_timeout = 300
 		timeout_effect = {
 			if = {
 				limit = {
