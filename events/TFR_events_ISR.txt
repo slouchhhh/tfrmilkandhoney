@@ -100,18 +100,62 @@ country_event = { #opening event
 	id = israel.1
 	title = israel.1.t
 	desc = israel.1.d
-	picture = GFX_Palestinian_Riot
+	picture = GFX_ISR_netanyahu_trial_delayed
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = { #shabbas goy
 		name = israel.1.a
-		
+		ISR = {
+			country_event = {
+				id = israel.12
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = { #the trial takes place
+	id = israel.12
+	title = israel.12.t
+	desc = israel.12.d
+	picture = GFX_ISR_netanyahu_trial
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #shabbas goy
+		name = israel.12.a
+	}
+}
+
+country_event = { #fixing netanyahu's image
+	id = israel.13
+	title = israel.13.t
+	desc = israel.13.d
+	picture = GFX_ISR_sweet_as_honey
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #shabbas goy
+		name = israel.13.a
+	}
+}
+
+country_event = { #increasing foreign support
+	id = israel.14
+	title = israel.14.t
+	desc = israel.14.d
+	picture = GFX_ISR_foreign_support
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #shabbas goy
+		name = israel.14.a
 	}
 }
 
 country_event = { #right left or status quo
-	id = israel.2
+	id = israel.3
 	title = israel.2.t
 	desc = israel.2.d
 	picture = GFX_Palestinian_Riot
@@ -139,7 +183,7 @@ country_event = { #state of emergency
 	id = israel.3
 	title = israel.3.t
 	desc = israel.3.d
-	picture = GFX_Palestinian_Riot
+	picture = GFX_ISR_state_of_emergency
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -148,7 +192,11 @@ country_event = { #state of emergency
 		ai_chance = {
 			base = 100
 		}
-		
+		hidden_effect = {
+			retire_character = ISR_reuven_rivlin_char
+			clr_country_flag = head_of_gov_ui_enabled
+			news_event = { id = news.2000 days = 1 }
+		}
 	}
 }
 
@@ -156,7 +204,7 @@ country_event = { #covid event
 	id = israel.4
 	title = israel.4.t
 	desc = israel.4.d
-	picture = GFX_Generic_COVID1
+	picture = GFX_ISR_covid_outbreak
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -185,7 +233,7 @@ country_event = { #covid over event
 	id = israel.5
 	title = israel.5.t
 	desc = israel.5.d
-	picture = GFX_Generic_COVID2
+	picture = GFX_ISR_covid_conclusion
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -348,7 +396,7 @@ country_event = { #first flavor
 	id = israel.9901
 	title = israel.9901.t
 	desc = israel.9901.d
-	picture = GFX_FRA_french_soldier
+	picture = GFX_ISR_idf_soldier
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -363,7 +411,7 @@ country_event = { #blueandwhite flavor
 	id = israel.9902
 	title = israel.9902.t
 	desc = israel.9902.d
-	picture = GFX_FRA_french_soldier
+	picture = GFX_ISR_blue_and_white
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -381,7 +429,7 @@ country_event = { #covid flavor
 	id = israel.9903
 	title = israel.9903.t
 	desc = israel.9903.d
-	picture = GFX_Covid-19_Cases_Increase
+	picture = GFX_ISR_covid_cases_increase
 	
 	fire_only_once = yes
 	is_triggered_only = yes

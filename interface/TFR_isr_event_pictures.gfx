@@ -1,0 +1,46 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_israel_state_of_emergency"
+		texturefile = "gfx/event_pictures/ISR/israel_state_of_emergency.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_netanyahu_trial"
+		texturefile = "gfx/event_pictures/ISR/ISR_netanyahu_trial.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_state_of_emergency"
+		texturefile = "gfx/event_pictures/ISR/ISR_state_of_emergency.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_covid_outbreak"
+		texturefile = "gfx/event_pictures/ISR/ISR_covid_outbreak.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_covid_conclusion"
+		texturefile = "gfx/event_pictures/ISR/ISR_covid_conclusion.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_idf_soldier"
+		texturefile = "gfx/event_pictures/ISR/ISR_idf_soldier.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_blue_and_white"
+		texturefile = "gfx/event_pictures/ISR/ISR_blue_and_white.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_covid_cases_increase"
+		texturefile = "gfx/event_pictures/ISR/ISR_covid_cases_increase.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_netanyahu_trial_delayed"
+		texturefile = "gfx/event_pictures/ISR/ISR_netanyahu_trial_delayed.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_sweet_as_honey"
+		texturefile = "gfx/event_pictures/ISR/ISR_sweet_as_honey.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_foreign_support"
+		texturefile = "gfx/event_pictures/ISR/ISR_foreign_support.png"
+	}
+} 
