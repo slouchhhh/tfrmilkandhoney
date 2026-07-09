@@ -1,0 +1,14 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_syria_rojava_offensive"
+		texturefile = "gfx/event_pictures/SYR/syria_rojava_offensive.png"
+	}
+	SpriteType = {
+		name = "GFX_syria_end_of_civil_war"
+		texturefile = "gfx/event_pictures/SYR/syria_end_of_civil_war.png"
+	}
+	SpriteType = {
+		name = "GFX_syria_end_of_occupation"
+		texturefile = "gfx/event_pictures/SYR/syria_end_of_occupation.png"
+	}
+} 

@@ -51,10 +51,6 @@ country_event = {
 			add_to_faction = EGY
 			add_to_faction = SYR
 			add_to_faction = HEZ
-			set_politics = {
-				ruling_party = nationalist
-				elections_allowed = no
-			}
 		}
 		ISR = {
 			create_faction = PRO_ISRAEL_FACTION
@@ -155,7 +151,7 @@ country_event = { #increasing foreign support
 }
 
 country_event = { #right left or status quo
-	id = israel.3
+	id = israel.2
 	title = israel.2.t
 	desc = israel.2.d
 	picture = GFX_Palestinian_Riot
@@ -254,6 +250,12 @@ country_event = { #white peace STALEMATE
 	is_triggered_only = yes
 	option = { 
 		name = israel.6.a
+		set_portraits = {
+			character = ISR_benjamin_netanyahu_char
+			civilian = {
+				large = "gfx/leaders/ISR/Benjamin Netanyahu 3.png"
+			}
+		}
 		every_enemy_country = {
             white_peace = ROOT
         }
@@ -277,6 +279,12 @@ country_event = { #two state solution PAL VICTORY
 	is_triggered_only = yes
 	option = { 
 		name = israel.7.a
+		set_portraits = {
+			character = ISR_benjamin_netanyahu_char
+			civilian = {
+				large = "gfx/leaders/ISR/Benjamin Netanyahu 2.png"
+			}
+		}
 		every_enemy_country = {
             white_peace = ROOT
         }
@@ -309,6 +317,12 @@ country_event = { #tpd ISR VICTORY
 	is_triggered_only = yes
 	option = { 
 		name = israel.8.a
+		set_portraits = {
+			character = ISR_benjamin_netanyahu_char
+			civilian = {
+				large = "gfx/leaders/ISR/Benjamin Netanyahu 1.png"
+			}
+		}
 		every_enemy_country = {
             white_peace = ROOT
         }

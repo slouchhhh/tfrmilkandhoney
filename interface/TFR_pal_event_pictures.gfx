@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_palestine_hamas_coup"
+		texturefile = "gfx/event_pictures/PAL/palestine_hamas_coup.png"
+	}
+} 

@@ -1,0 +1,28 @@
+﻿add_namespace = palestine
+
+#hamas coup
+country_event = {
+	id = palestine.1
+	title = palestine.1.t
+	desc = palestine.1.d
+	picture = GFX_Hezbollah_Mobilizes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = palestine.1.a
+		change_government_type_military_dictatorship = yes
+		change_economy_type_capitalism = yes
+		set_politics = {	
+			ruling_party = nationalist
+		}
+		set_popularities = {
+			social_democrat = 22
+			libertarian_socialist = 11
+			nationalist = 35
+			conservative = 11
+			authoritarian_democrat = 21
+		}
+		news_event = { id = news.2004 days = 1 }
+	}
+}

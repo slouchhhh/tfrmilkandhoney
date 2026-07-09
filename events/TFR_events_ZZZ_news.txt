@@ -9608,7 +9608,7 @@ news_event = {
 	}
 }
 
-#German People’s State Reasserts Itself over Bavaria
+#German People's State Reasserts Itself over Bavaria
 news_event = {
 	id = news.594
 	title = news.594.t
@@ -10821,5 +10821,75 @@ news_event = {
 
 	option = {
 		name = news.2000.a
+	}
+}
+
+news_event = {
+	id = news.2001
+	title = news.2001.t
+	desc = news.2001.d
+	picture = GFX_syria_rojava_offensive
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = news.2001.a
+	}
+}
+
+news_event = {
+	id = news.2002
+	title = news.2002.t
+	desc = news.2002.d
+	picture = GFX_syria_end_of_civil_war
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = news.2002.a
+	}
+}
+
+news_event = {
+	id = news.2003
+	title = news.2003.t
+	desc = news.2003.d
+	picture = GFX_syria_end_of_occupation
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = news.2003.a
+	}
+}
+
+news_event = {
+	id = news.2004
+	title = news.2004.t
+	desc = news.2004.d
+	picture = GFX_palestine_hamas_coup
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = news.2004.a
+	}
+}
+
+news_event = {
+	id = news.2005
+	title = news.2005.t
+	desc = news.2005.d
+	picture = GFX_lebanon_military_coup
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = news.2005.a
 	}
 }

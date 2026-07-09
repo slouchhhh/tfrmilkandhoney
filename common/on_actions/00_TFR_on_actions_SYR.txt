@@ -1,0 +1,44 @@
+on_actions = {
+    on_state_control_changed = {
+        effect = {
+            if = {
+				limit = {
+					FROM.FROM = {
+						state = 1029
+					}
+					FROM = {
+						tag = ROJ
+					}
+					ROOT = {
+						tag = SYR
+					}
+					has_global_flag = syria_rojava_offensive
+				}
+				SYR = {
+                    country_event = {
+                        id = syria.3
+                    }
+                }
+			}
+            if = {
+				limit = {
+					FROM.FROM = {
+						state = 1027
+					}
+					FROM = {
+						tag = HTS
+					}
+					ROOT = {
+						tag = SYR
+					}
+					has_global_flag = syria_hts_offensive
+				}
+				SYR = {
+                    country_event = {
+                        id = syria.5
+                    }
+                }
+			}
+        }
+    }
+}
