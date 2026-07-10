@@ -1,0 +1,107 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_ISR_election_race_container"
+		clipping = no
+		position = { x = 5 y = 0 }
+		
+		iconType = {
+			name = "national_portrait_gantz" 
+			position = { x = 83 y = -955 }
+			spriteType = "GFX_benny_gantz_portrait"
+			pdx_tooltip = "ISR_benny_gantz_name"
+			pdx_tooltip_delayed = "ISR_benny_gantz_desc"
+		}
+		
+		iconType = {
+			name = "national_portrait_bennett" 
+			position = { x = 250 y = -955 }
+			spriteType = "GFX_naftali_bennett_portrait"
+			pdx_tooltip = "ISR_naftali_bennett_name"
+			pdx_tooltip_delayed = "ISR_naftali_bennett_desc"
+		}
+		
+		iconType = {
+			name = "religious_portrait_smotrich" 
+			position = { x = 83 y = -620 }
+			spriteType = "GFX_bezalel_smotrich_portrait"
+			pdx_tooltip = "ISR_bezalel_smotrich_name"
+			pdx_tooltip_delayed = "ISR_bezalel_smotrich_desc"
+		}
+
+        iconType = {
+			name = "religious_portrait_deri" 
+			position = { x = 250 y = -620 }
+			spriteType = "GFX_aryeh_deri_portrait"
+			pdx_tooltip = "ISR_aryeh_deri_name"
+			pdx_tooltip_delayed = "ISR_aryeh_deri_desc"
+		}
+		
+		instantTextboxType = {
+			name = "ISR_benny_gantz_text"
+			position = { x = 83 y = -728 }
+			maxWidth = 167
+			maxHeight = 43
+			format = center
+			font = "VCR02_12"
+			text = "[ISR_benny_gantz_text]"
+			pdx_tooltip = "ISR_benny_gantz_name"
+			pdx_tooltip_delayed = "ISR_benny_gantz_desc"
+		}
+		
+		instantTextboxType = {
+			name = "ISR_naftali_bennett_text"
+			position = { x = 250 y = -728 }
+			maxWidth = 167
+			maxHeight = 43
+			format = center
+			font = "VCR02_12"
+			text = "[ISR_naftali_bennett_text]"
+			pdx_tooltip = "ISR_naftali_bennett_name"
+			pdx_tooltip_delayed = "ISR_naftali_bennett_desc"
+		}
+		
+		instantTextboxType = {
+			name = "ISR_bezalel_smotrich_text"
+			position = { x = 83 y = -393 }
+			maxWidth = 167
+			maxHeight = 43
+			format = center
+			font = "VCR02_12"
+			text = "[ISR_bezalel_smotrich_text]"
+			pdx_tooltip = "ISR_bezalel_smotrich_name"
+			pdx_tooltip_delayed = "ISR_bezalel_smotrich_desc"
+		}
+
+        instantTextboxType = {
+			name = "ISR_aryeh_deri_text"
+			position = { x = 250 y = -393 }
+			maxWidth = 167
+			maxHeight = 43
+			format = center
+			font = "VCR02_12"
+			text = "[ISR_aryeh_deri_text]"
+			pdx_tooltip = "ISR_aryeh_deri_name"
+			pdx_tooltip_delayed = "ISR_aryeh_deri_desc"
+		}
+
+		instantTextboxType = {
+			name = "ISR_national_support_text"
+			position = { x = 167 y = -691 }
+			maxWidth = 167
+			maxHeight = 43
+			format = center
+			font = "VCR02_14"
+			text = "ISR_national_support_text"
+		}
+
+		instantTextboxType = {
+			name = "ISR_religious_support_text"
+			position = { x = 167 y = -356 }
+			maxWidth = 167
+			maxHeight = 43
+			format = center
+			font = "VCR02_14"
+			text = "ISR_religious_support_text"
+		}
+    }
+}

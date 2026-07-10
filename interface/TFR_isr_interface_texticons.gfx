@@ -51,6 +51,30 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_benny_gantz_portrait"
+		texturefile = "gfx/texticons/ISR/texticon_portraits/ISR_benny_gantz_texticon.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_naftali_bennett_portrait"
+		texturefile = "gfx/texticons/ISR/texticon_portraits/ISR_naftali_bennett_texticon.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_bezalel_smotrich_portrait"
+		texturefile = "gfx/texticons/ISR/texticon_portraits/ISR_bezalel_smotrich_texticon.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_aryeh_deri_portrait"
+		texturefile = "gfx/texticons/ISR/texticon_portraits/ISR_aryeh_deri_texticon.png"
+		legacy_lazy_load = no
+	}
+
 	###SUPEREVENTS###
 
 	spriteType = {

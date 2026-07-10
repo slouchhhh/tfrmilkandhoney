@@ -235,12 +235,17 @@
 	}
 
 	set_popularities = {
-		authoritarian_democrat = 5
-		conservative = 35
-		social_liberal = 5
-		social_democrat = 19
-		market_liberal = 31
-		libertarian_socialist = 5
+		national_socialist = 0
+		fascist = 8
+		nationalist = 8
+		authoritarian_democrat = 6
+		conservative = 27
+		market_liberal = 28
+		social_liberal = 4
+		social_democrat = 7
+		libertarian_socialist = 12
+		communist = 0
+		totalitarian_socialist = 0
 	}
 
 	send_embargo = PAL
@@ -391,15 +396,30 @@
 
 	country_event = {
 		id = israel.4
-		days = 35
+		days = 70
+	}
+
+	#country_event = {
+	#	id = israel.9901
+	#	days = 4
+	#}
+
+	#country_event = {
+	#	id = israel.9902
+	#	days = 18
+	#}
+
+	country_event = {
+		id = israel.1000
+		days = 1
 	}
 
 	country_event = {
-		id = israel.9901
-		days = 4
+		id = israel.2000
+		days = 26
 	}
 
 	country_event = {
-		id = israel.9902
-		days = 18
+		id = israel.2001
+		days = 38
 	}

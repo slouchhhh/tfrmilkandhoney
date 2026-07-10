@@ -12,10 +12,6 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/ISR/ISR_state_of_emergency.png"
 	}
 	SpriteType = {
-		name = "GFX_ISR_covid_outbreak"
-		texturefile = "gfx/event_pictures/ISR/ISR_covid_outbreak.png"
-	}
-	SpriteType = {
 		name = "GFX_ISR_covid_conclusion"
 		texturefile = "gfx/event_pictures/ISR/ISR_covid_conclusion.png"
 	}
@@ -36,11 +32,35 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/ISR/ISR_netanyahu_trial_delayed.png"
 	}
 	SpriteType = {
-		name = "GFX_ISR_sweet_as_honey"
-		texturefile = "gfx/event_pictures/ISR/ISR_sweet_as_honey.png"
+		name = "GFX_ISR_new_decade"
+		texturefile = "gfx/event_pictures/ISR/ISR_new_decade.png"
 	}
 	SpriteType = {
-		name = "GFX_ISR_foreign_support"
-		texturefile = "gfx/event_pictures/ISR/ISR_foreign_support.png"
+		name = "GFX_ISR_election"
+		texturefile = "gfx/event_pictures/ISR/ISR_election.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_election_results"
+		texturefile = "gfx/event_pictures/ISR/ISR_election_results.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_no_winner"
+		texturefile = "gfx/event_pictures/ISR/ISR_no_winner.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_covid_first_cases"
+		texturefile = "gfx/event_pictures/ISR/ISR_covid_first_cases.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_the_race_begins"
+		texturefile = "gfx/event_pictures/ISR/ISR_the_race_begins.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_the_trump_peace_plan"
+		texturefile = "gfx/event_pictures/ISR/ISR_the_trump_peace_plan.png"
+	}
+	SpriteType = {
+		name = "GFX_ISR_release_of_naama_issachar"
+		texturefile = "gfx/event_pictures/ISR/ISR_release_of_naama_issachar.png"
 	}
 } 

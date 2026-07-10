@@ -1,0 +1,6 @@
+scripted_gui = {
+	TFR_ISR_election_race_gui = {
+		context_type = decision_category
+		window_name = "TFR_ISR_election_race_container"
+	}
+}
