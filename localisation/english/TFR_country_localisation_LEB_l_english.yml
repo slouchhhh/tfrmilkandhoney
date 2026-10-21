@@ -1,0 +1,10 @@
+﻿l_english:
+ #Focuses
+
+ #Events
+ news.2005.t: "Military Coup in Lebanon"
+ news.2005.d: "Following a stunning broadcast from the Ministry of Defense, General Joseph Aoun, Commander of the Lebanese Armed Forces (LAF), announced that the military has dissolved the parliament of Lebanon, suspended the constitution, and established the Supreme Military Council to avert an imminent civil war.\n\nThe intervention follows years of catastrophic paralysis sparked by the devastating August 2020 Beirut Port explosion. The incident exposed the absolute negligence of the country's sectarian ruling class and triggered a total economic freefall, wiping out ninety percent of the currency's value and plunging the population into hyperinflation and rolling blackouts. The final catalyst came as nationwide fuel and bread riots devolved into armed street battles, forcing the military to mobilize mechanized divisions to secure the capital.\n\nIn his address, General Aoun framed the newly established junta as a strictly secular, anti-sectarian transitional administration. While the streets remain under a tense calm, international observers are watching with caution. The junta faces a staggering nightmare in stabilizing a bankrupt nation while maintaining a fragile domestic truce with powerful non-state actors like Hezbollah along the volatile southern frontier."
+ news.2005.a: "An end to civilian leadership."
+ #Characters
+ LEB_joseph_aoun_char: "Joseph Aoun"
+ 

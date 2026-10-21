@@ -6,6 +6,7 @@
 				}
 			}
 			country_leader = {
+				desc = "POLITICS_REUVEN_RIVLIN_DESC"
 				ideology = right_populism
 				expire = "1.1.1.1"
 				id=-1
@@ -14,7 +15,7 @@
 		ISR_benjamin_netanyahu_char = {
 			portraits = {
 				civilian = {
-					large = "gfx/leaders/ISR/ISR_benjamin_netanyahu.png"
+					large = "gfx/leaders/ISR/Benjamin Netanyahu.png"
 				}
 			}
 			country_leader = {

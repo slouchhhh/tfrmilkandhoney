@@ -10,8 +10,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ISR_request_parliamentary_immunity
-		icon = GFX_ISR_bibi_trial
+		id = ISR_counting_the_ballots
+		icon = GFX_ISR_counting_the_ballots
 		x = 6
 		y = 1
 		cost = 6
@@ -20,65 +20,19 @@ focus_tree = {
 		ai_will_do = {
 			base = 10
 		}
+		available = {
+			has_country_flag = ISR_counting_ballots
+		}
+		bypass = {
+			has_country_flag = ISR_counting_ballots
+		}
 		allow_branch = {
 			NOT = {
 				has_country_flag = ISR_initial_tree_over
 			}
 		}
 		completion_reward = {
-			
-			add_political_power = 50
-			ISR = {
-				country_event = {
-					id = israel.1
-				}
-
-				custom_effect_tooltip = ISR_parliament_unlock
-				set_variable = {
-					var = ISR_yisrael_support
-					value = 22
-				}
-				set_variable = {
-					var = ISR_likkud_support
-					value = 50
-				}
-				set_variable = {
-					var = ISR_yeshatid_support
-					value = 22
-				}
-				set_variable = {
-					var = ISR_haavoda_support
-					value = 5
-				}
-				set_variable = {
-					var = ISR_hadash_support
-					value = 5
-				}
-				set_variable = {
-					var = ISR_yisrael_seats
-					value = 9
-				}
-				set_variable = {
-					var = ISR_likkud_seats
-					value = 36
-				}
-				set_variable = {
-					var = ISR_yeshatid_seats
-					value = 33
-				}
-				set_variable = {
-					var = ISR_haavoda_seats
-					value = 7
-				}
-				set_variable = {
-					var = ISR_hadash_seats
-					value = 2
-				}
-				set_variable = {
-					var = ISR_otherparties_seats
-					value = 33
-				}
-			}
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -88,9 +42,12 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available_if_capitulated = yes
-		relative_position_id = ISR_request_parliamentary_immunity
+		relative_position_id = ISR_counting_the_ballots
 		prerequisite = {
-			focus = ISR_request_parliamentary_immunity
+			focus = ISR_counting_the_ballots
+		}
+		available = {
+			has_country_flag = ISR_the_race_is_up
 		}
 		ai_will_do = {
 			base = 50
@@ -265,9 +222,12 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available_if_capitulated = yes
-		relative_position_id = ISR_request_parliamentary_immunity
+		relative_position_id = ISR_counting_the_ballots
 		prerequisite = {
-			focus = ISR_request_parliamentary_immunity
+			focus = ISR_counting_the_ballots
+		}
+		available = {
+			has_country_flag = ISR_the_race_is_up
 		}
 		ai_will_do = {
 			base = 50000
@@ -510,15 +470,18 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ISR_sweeten_bibis_image
-		icon = GFX_ISR_milk_and_honey
+		id = ISR_request_parliamentary_immunity
+		icon = GFX_ISR_bibi_trial
 		x = 2
 		y = 1
 		cost = 6
 		available_if_capitulated = yes
-		relative_position_id = ISR_request_parliamentary_immunity
+		relative_position_id = ISR_counting_the_ballots
 		prerequisite = {
-			focus = ISR_request_parliamentary_immunity
+			focus = ISR_counting_the_ballots
+		}
+		available = {
+			has_country_flag = ISR_the_race_is_up
 		}
 		ai_will_do = {
 			base = 50
@@ -538,6 +501,11 @@ focus_tree = {
 				remove_idea = ISR_netanyahu_corruption
 				add_idea = ISR_netanyahu_corruption1
 			}
+			ISR = {
+				country_event = {
+					id = israel.13
+				}
+			}
 		}
 	}
 
@@ -548,9 +516,9 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available_if_capitulated = yes
-		relative_position_id = ISR_sweeten_bibis_image
+		relative_position_id = ISR_request_parliamentary_immunity
 		prerequisite = {
-			focus = ISR_sweeten_bibis_image
+			focus = ISR_request_parliamentary_immunity
 		}
 		ai_will_do = {
 			base = 50
@@ -600,6 +568,9 @@ focus_tree = {
 					id = "PAL"
 					value = 1000
 				}
+				country_event = {
+					id = israel.14
+				}
 			}
 		}
 	}
@@ -611,9 +582,9 @@ focus_tree = {
 		y = 1
 		cost = 6
 		available_if_capitulated = yes
-		relative_position_id = ISR_sweeten_bibis_image
+		relative_position_id = ISR_request_parliamentary_immunity
 		prerequisite = {
-			focus = ISR_sweeten_bibis_image
+			focus = ISR_request_parliamentary_immunity
 		}
 		ai_will_do = {
 			base = 45
@@ -782,7 +753,7 @@ focus_tree = {
 		icon = GFX_ISR_bibi_america_sad
 		x = 0
 		y = 1
-		cost = 6
+		cost = 1
 		available_if_capitulated = yes
 		relative_position_id = ISR_target_online_forums
 		prerequisite = {

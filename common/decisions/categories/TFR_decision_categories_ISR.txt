@@ -5,10 +5,25 @@ ISR_knesset_category = {
 	allowed = {
 		tag = ISR
 	}
+
 	visible = {
-		has_completed_focus = ISR_request_parliamentary_immunity
+		has_country_flag = ISR_opening_event
 	}
+
 	visible_when_empty = yes
+}
+
+ISR_election_race_category = {
+	icon = generic_propaganda
+	visible_when_empty = yes
+	scripted_gui = TFR_ISR_election_race_gui
+	allowed = {
+		tag = ISR
+	}
+	visible = {
+		has_country_flag = ISR_the_race_is_up
+	}
+	priority = 5
 }
 
 ISR_covid_category = {

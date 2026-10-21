@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_lebanon_military_coup"
+		texturefile = "gfx/event_pictures/LEB/lebanon_military_coup.png"
+	}
+} 

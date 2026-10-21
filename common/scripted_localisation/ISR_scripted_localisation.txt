@@ -187,17 +187,95 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = ISR_benny_gantz_text
+	text = {
+		localization_key = ISR_benny_gantz
+	}
+}
 
+defined_text = {
+	name = ISR_naftali_bennett_text
+	text = {
+		localization_key = ISR_naftali_bennett
+	}
+}
 
+defined_text = {
+	name = ISR_bezalel_smotrich_text
+	text = {
+		localization_key = ISR_bezalel_smotrich
+	}
+}
 
+defined_text = {
+	name = ISR_aryeh_deri_text
+	text = {
+		localization_key = ISR_aryeh_deri
+	}
+}
 
+defined_text = {
+	name = GetNational_Support
+	text = {
+		trigger = {
+			check_variable = { ISR_national_support > 80 }
+		}
+		localization_key = ISR_national_support_committed
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_national_support > 60 }
+		}
+		localization_key = ISR_national_support_willing
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_national_support > 40 }
+		}
+		localization_key = ISR_national_support_hesitant
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_national_support > 20 }
+		}
+		localization_key = ISR_national_support_skeptical
+	}
+	text = {
+		localization_key = ISR_national_support_opposed
+	}
+}
 
-
-
-
-
-
-
+defined_text = {
+	name = GetReligious_Support
+	text = {
+		trigger = {
+			check_variable = { ISR_religious_support > 80 }
+		}
+		localization_key = ISR_religious_support_committed
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_religious_support > 60 }
+		}
+		localization_key = ISR_religious_support_willing
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_religious_support > 40 }
+		}
+		localization_key = ISR_religious_support_hesitant
+	}
+	text = {
+		trigger = {
+			check_variable = { ISR_religious_support > 20 }
+		}
+		localization_key = ISR_religious_support_skeptical
+	}
+	text = {
+		localization_key = ISR_religious_support_opposed
+	}
+}
 
 ### SUPER EVENTS ###
 

@@ -51,10 +51,6 @@ country_event = {
 			add_to_faction = EGY
 			add_to_faction = SYR
 			add_to_faction = HEZ
-			set_politics = {
-				ruling_party = nationalist
-				elections_allowed = no
-			}
 		}
 		ISR = {
 			create_faction = PRO_ISRAEL_FACTION
@@ -96,17 +92,35 @@ country_event = {
 	}
 }
 
-country_event = { #opening event
-	id = israel.1
-	title = israel.1.t
-	desc = israel.1.d
-	picture = GFX_Palestinian_Riot
+#country_event = { #opening event
+#	id = israel.1
+#	title = israel.1.t
+#	desc = israel.1.d
+#	picture = GFX_ISR_netanyahu_trial_delayed
+#	
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	option = { #shabbas goy
+#		name = israel.1.a
+#		ISR = {
+#			country_event = {
+#				id = israel.12
+#				days = 30
+#			}
+#		}
+#	}
+#}
+
+country_event = { #the trial takes place
+	id = israel.12
+	title = israel.12.t
+	desc = israel.12.d
+	picture = GFX_ISR_netanyahu_trial
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = { #shabbas goy
-		name = israel.1.a
-		
+		name = israel.12.a
 	}
 }
 
@@ -139,7 +153,7 @@ country_event = { #state of emergency
 	id = israel.3
 	title = israel.3.t
 	desc = israel.3.d
-	picture = GFX_Palestinian_Riot
+	picture = GFX_ISR_state_of_emergency
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -148,7 +162,11 @@ country_event = { #state of emergency
 		ai_chance = {
 			base = 100
 		}
-		
+		hidden_effect = {
+			retire_character = ISR_reuven_rivlin_char
+			clr_country_flag = head_of_gov_ui_enabled
+			news_event = { id = news.2000 days = 1 }
+		}
 	}
 }
 
@@ -156,7 +174,7 @@ country_event = { #covid event
 	id = israel.4
 	title = israel.4.t
 	desc = israel.4.d
-	picture = GFX_Generic_COVID1
+	picture = GFX_ISR_covid_first_cases
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -173,7 +191,7 @@ country_event = { #covid event
 				activate_mission = ISR_worsening_covid
 				country_event = {
 					id = israel.9903
-					days = 13
+					days = 25
 				}
 			}
 			
@@ -185,7 +203,7 @@ country_event = { #covid over event
 	id = israel.5
 	title = israel.5.t
 	desc = israel.5.d
-	picture = GFX_Generic_COVID2
+	picture = GFX_ISR_covid_conclusion
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -206,6 +224,12 @@ country_event = { #white peace STALEMATE
 	is_triggered_only = yes
 	option = { 
 		name = israel.6.a
+		set_portraits = {
+			character = ISR_benjamin_netanyahu_char
+			civilian = {
+				large = "gfx/leaders/ISR/Benjamin Netanyahu 3.png"
+			}
+		}
 		every_enemy_country = {
             white_peace = ROOT
         }
@@ -229,6 +253,12 @@ country_event = { #two state solution PAL VICTORY
 	is_triggered_only = yes
 	option = { 
 		name = israel.7.a
+		set_portraits = {
+			character = ISR_benjamin_netanyahu_char
+			civilian = {
+				large = "gfx/leaders/ISR/Benjamin Netanyahu 2.png"
+			}
+		}
 		every_enemy_country = {
             white_peace = ROOT
         }
@@ -261,6 +291,12 @@ country_event = { #tpd ISR VICTORY
 	is_triggered_only = yes
 	option = { 
 		name = israel.8.a
+		set_portraits = {
+			character = ISR_benjamin_netanyahu_char
+			civilian = {
+				large = "gfx/leaders/ISR/Benjamin Netanyahu 1.png"
+			}
+		}
 		every_enemy_country = {
             white_peace = ROOT
         }
@@ -348,7 +384,7 @@ country_event = { #first flavor
 	id = israel.9901
 	title = israel.9901.t
 	desc = israel.9901.d
-	picture = GFX_FRA_french_soldier
+	picture = GFX_ISR_idf_soldier
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -363,7 +399,7 @@ country_event = { #blueandwhite flavor
 	id = israel.9902
 	title = israel.9902.t
 	desc = israel.9902.d
-	picture = GFX_FRA_french_soldier
+	picture = GFX_ISR_blue_and_white
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -381,7 +417,7 @@ country_event = { #covid flavor
 	id = israel.9903
 	title = israel.9903.t
 	desc = israel.9903.d
-	picture = GFX_Covid-19_Cases_Increase
+	picture = GFX_ISR_covid_cases_increase
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -389,5 +425,236 @@ country_event = { #covid flavor
 		name = israel.9903.a
 		add_stability = -0.01
 		
+	}
+}
+
+country_event = { #opening event
+	id = israel.1000
+	title = israel.1000.t
+	desc = israel.1000.d
+	picture = GFX_ISR_new_decade
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.1000.a
+		custom_effect_tooltip = ISR_parliament_unlock
+		set_variable = {
+			var = ISR_yisrael_support
+			value = 22
+		}
+		set_variable = {
+			var = ISR_likkud_support
+			value = 50
+		}
+		set_variable = {
+			var = ISR_yeshatid_support
+			value = 22
+		}
+		set_variable = {
+			var = ISR_haavoda_support
+			value = 5
+		}
+		set_variable = {
+			var = ISR_hadash_support
+			value = 5
+		}
+		set_variable = {
+			var = ISR_yisrael_seats
+			value = 8
+		}
+		set_variable = {
+			var = ISR_likkud_seats
+			value = 32
+		}
+		set_variable = {
+			var = ISR_yeshatid_seats
+			value = 33
+		}
+		set_variable = {
+			var = ISR_haavoda_seats
+			value = 6
+		}
+		set_variable = {
+			var = ISR_hadash_seats
+			value = 13
+		}
+		set_variable = {
+			var = ISR_otherparties_seats
+			value = 28
+		}
+		set_country_flag = ISR_opening_event
+		add_stability = -0.05
+		hidden_effect = {
+			ISR = {
+				country_event = {
+					id = israel.1001
+					days = 61
+				}
+			}
+		}
+	}
+}
+
+country_event = { #march 2020 election
+	id = israel.1001
+	title = israel.1001.t
+	desc = israel.1001.d
+	picture = GFX_ISR_election
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.1001.a
+		set_country_flag = ISR_counting_ballots
+		hidden_effect = {
+			ISR = {
+				country_event = {
+					id = israel.1002
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #results
+	id = israel.1002
+	title = israel.1002.t
+	desc = israel.1002.d
+	picture = GFX_ISR_election_results
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.1002.a
+		custom_effect_tooltip = ISR_israel_election_tt
+		set_variable = {
+			var = ISR_yisrael_seats
+			value = 7
+		}
+		set_variable = {
+			var = ISR_likkud_seats
+			value = 36
+		}
+		set_variable = {
+			var = ISR_yeshatid_seats
+			value = 33
+		}
+		set_variable = {
+			var = ISR_haavoda_seats
+			value = 7
+		}
+		set_variable = {
+			var = ISR_hadash_seats
+			value = 15
+		}
+		set_variable = {
+			var = ISR_otherparties_seats
+			value = 22
+		}
+		hidden_effect = {
+			set_popularities = {
+				national_socialist = 0
+				fascist = 7
+				nationalist = 8
+				authoritarian_democrat = 6
+				conservative = 30
+				market_liberal = 26
+				social_liberal = 4
+				social_democrat = 6
+				libertarian_socialist = 13
+				communist = 0
+				totalitarian_socialist = 0
+			}
+			ISR = {
+				country_event = {
+					id = israel.1003
+					days = 21
+				}
+			}
+		}
+	}
+}
+
+country_event = { #no winner
+	id = israel.1003
+	title = israel.1003.t
+	desc = israel.1003.d
+	picture = GFX_ISR_no_winner
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = israel.1003.a
+		hidden_effect = {
+			ISR = {
+				country_event = {
+					id = israel.1004
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #the election race begins
+	id = israel.1004
+	title = israel.1004.t
+	desc = israel.1004.d
+	picture = GFX_ISR_the_race_begins
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = israel.1004.a
+		custom_effect_tooltip = ISR_election_race_unlock
+		set_country_flag = ISR_the_race_is_up
+		set_variable = {
+			var = ISR_national_support
+			value = 25
+		}
+		set_variable = {
+			var = ISR_religious_support
+			value = 50
+		}
+		clamp_variable = {
+			var = ISR_national_support
+			min = 0
+			max = 100
+		}
+		clamp_variable = {
+			var = ISR_religious_support
+			min = 0
+			max = 100
+		}
+		activate_mission = ISR_election_timer
+	}
+}
+
+country_event = { #the trump peace plan
+	id = israel.2000
+	title = israel.2000.t
+	desc = israel.2000.d
+	picture = GFX_ISR_the_trump_peace_plan
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = israel.2000.a
+	}
+}
+
+country_event = { #release of issachar
+	id = israel.2001
+	title = israel.2001.t
+	desc = israel.2001.d
+	picture = GFX_ISR_release_of_naama_issachar
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = israel.2001.a
+		add_political_power = 25
 	}
 }

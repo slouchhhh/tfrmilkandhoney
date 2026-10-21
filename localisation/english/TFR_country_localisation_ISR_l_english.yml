@@ -1,5 +1,5 @@
 ﻿l_english:
- ISR_GATHERING_STORM_DESC: "Israel is a good country placeholder ahhh"
+ ISR_GATHERING_STORM_DESC: "Israel, caught in deep political instability and mounting legal controversies surrounding its leadership, remains a highly volatile powerhouse in the Levant. While technological growth and regional defense networks keep the nation secure, public trust is fracturing over the direction of the state's democratic institutions.\n\nWill Israel maintain its fragile status quo and seek regional normalization, or will internal friction ignite a political shift just as a major conflict looms on the horizon?"
  #Leaders
  ISR_yousef_jabareen_char: "Yousef Jabareen"
  ISR_yousef_jabareen_char_desc: ""
@@ -38,6 +38,8 @@
  #Decision Categories
  ISR_knesset_category: "The Knesset"
  ISR_knesset_category_desc: "\n\n\n\n\n£GFX_ISR_knesset_banner\n\n\n\n\n\n\n\nThe §2[ISR.GetName]§! is an awesome country man.\n\n§1Knesset§! Parties:\n\n £GFX_ISR_hadash_texticon  §RHadash§! Seats: §4[?ISR_hadash_seats]§!/120   Support: [ROOT.GetHadash_Support]\n\n £GFX_ISR_haavoda_texticon  §tHa'Avoda§! Seats: §4[?ISR_haavoda_seats]§!/120   Support: [ROOT.GetHaavoda_Support]\n\n £GFX_ISR_yeshatid_texticon  §YYesh Atid§! Seats: §4[?ISR_yeshatid_seats]§!/120   Support: [ROOT.GetYeshatid_Support]\n\n £GFX_ISR_likkud_texticon  §BLikkud§! Seats: §4[?ISR_likkud_seats]§!/120   Support: [ROOT.GetLikkud_Support]\n\n £GFX_ISR_beiteinu_texticon  §gYisrael Beiteinu§! Seats: §4[?ISR_yisrael_seats]§!/120   Support: [ROOT.GetYisrael_Support]\n\n §8Other Parties§! Seats: §4[?ISR_otherparties_seats]§!/120"
+ ISR_election_race_category: "The Race to the Election"
+ ISR_election_race_category_desc: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAs Israel barrels toward the legislative vote, we must wage a high-stakes campaign to break the paralyzing parliamentary deadlock. Rather than dealing with a unified front, we must independently balance and secure commitments from two entirely distinct political spectrums to forge a viable majority: the state-focused §YNational Bloc§! (Blue and White & Yamina) and the traditionalist §YReligious Bloc§! (Religious Zionist Party & Shas)\n\nWinning over the National Bloc requires offering executive authority, major defense portfolios, or prime ministerial rotations to appeal to mainstream, security-minded voters. Conversely, locking down the Religious Bloc demands sector-specific funding guarantees, and sweeping judicial reforms. Pushing too far to appease hardline religious factions risks completely alienating center-right moderates, while offering too many institutional concessions to the center could shatter our conservative core. The final stance of these two camps when the ballots are cast will determine whether we command a government or face a total political demise."
  ISR_covid_category: "The Coronavirus Pandemic"
  ISR_covid_category_desc: ""
  ISR_arab_israeli_war_category: "The Arab-Israeli War"
@@ -54,12 +56,30 @@
  ISR_distribute_masks: "Distribute Masks"
  ISR_arab_israeli_war_timeout: "The Countdown to Peace"
  ISR_lobby_for_likkud: "Rally Likkud Support"
+
+ ISR_election_timer: "Countdown to the Election"
+ ISR_national_power_sharing: "§YNATIONAL BLOC:§! Propose Power-Sharing Rotation"
+ ISR_national_standardize_security_appointments: "§YNATIONAL BLOC:§! Secure Defense Portfolios"
+ ISR_national_coordinate_with_regional_allies: "§YNATIONAL BLOC:§! Coordinate with Regional Allies"
+ ISR_national_recognize_agricultural_outposts: "§YNATIONAL BLOC:§! Recognize Settler Farm Outposts"
+ ISR_national_implement_the_egalitarian_compromise: "§YNATIONAL BLOC:§! Enact the Kotel Compromise"
+ ISR_religious_overhaul_the_ministry_of_education: "§YRELIGIOUS BLOC:§! Grant Educational Autonomy"
+ ISR_religious_expand_the_rabbinical_court_jurisdiction: "§YRELIGIOUS BLOC:§! Expand Rabbinical Courts"
+ ISR_religious_transfer_civil_administration: "§YRELIGIOUS BLOC:§! Civil Administration Handover"
+ ISR_religious_fund_the_settlement_infrastructure_bypass: "§YRELIGIOUS BLOC:§! Fund Settlement Bypass Roads"
+ ISR_religious_introduce_the_judicial_override_clause: "§YRELIGIOUS BLOC:§! Introduce Judicial Override"
+ 
+ ISR_national_bloc_divider: "-- NATIONAL BLOC --"
+ ISR_religious_bloc_divider: "-- RELIGIOUS BLOC --"
+
  #Country Flag
  ANTI_ISRAEL_FACTION: "Levantine Mutual Pact"
  PRO_ISRAEL_FACTION: "Nations of Judaism"
  #Tooltips
+ ISR_israel_election_tt: "Seats in the §1Knesset§! are Shuffled!"
  ISR_election_decision_tt: "Unlocks £decision_icon_small Decisions To: §GWin the Election!§!"
  ISR_parliament_unlock: "Unlocks the £decision_icon_small §4Knesset§! Mechanic!"
+ ISR_election_race_unlock: "Unlocks the £decision_icon_small §4Election Race§! Mechanic!"
  ISR_statusquo_government_flag: "Side with £GFX_ISR_likkud_texticon §B Likkud§!!"
  ISR_left_government_flag: "Side with £GFX_ISR_yeshatid_texticon §Y Yesh Atid§! and £GFX_ISR_haavoda_texticon §t Ha'Avoda§!!"
  ISR_right_government_flag: "Side with £GFX_ISR_beiteinu_texticon §g Yisrael Beiteinu§!!"
@@ -102,6 +122,38 @@
  ISR_hadash_negsupport1_tooltip: "£GFX_ISR_hadash_texticon §RHadash§! Loses §RMinor§! §CSupport§!"
  ISR_hadash_negsupport2_tooltip: "£GFX_ISR_hadash_texticon §RHadash§! Loses §RModerate§! §CSupport§!"
  ISR_hadash_negsupport3_tooltip: "£GFX_ISR_hadash_texticon §RHadash§! Loses §RMajor§! §CSupport§!"
+
+ ISR_benny_gantz: "Benny Gantz"
+ ISR_benny_gantz_name: "§YBenny Gantz§!"
+ ISR_benny_gantz_desc: "§LAs the former Chief of Staff of the IDF and the architect of the Blue and White party, Benny Gantz entered the political arena as the ultimate defender of Israel's state institutions. To his supporters, he represents a disciplined, security-first alternative to years of political polarization, leveraging his deep military background to position himself as a stabilizing force for the country's fractured democracy.\n\nGantz's strategy relies entirely on defending the rule of law and preserving the independence of the judiciary against accelerating populist attacks. Yet, navigating the volatile waters of the constitutional crisis has forced him into a grueling balancing act. While he remains committed to a sovereign, institutionalist vision for Israel, the pressure to break the legislative deadlock has placed him in a precarious position, making him the primary target for Netanyahu's coalition gambit. Gantz is determined to protect the state, but in this cutthroat new arena, he must ensure his defense of the nation doesn't lead to his own political eclipse.§!"
+ ISR_naftali_bennett: "Naftali Bennett"
+ ISR_naftali_bennett_name: "§YNaftali Bennett§!"
+ ISR_naftali_bennett_desc: "§LAs a leading voice of the Israeli right, Naftali Bennett represents the modern-orthodox wing of the national political spectrum. A charismatic former tech entrepreneur and special forces commander, Bennett rejects the institutional caution of the old guard, offering his base an unapologetic vision of economic deregulation and fierce territorial nationalism.\n\nWhile fundamentally committed to a hawkish defense posture, Bennett refuses to let his faction be treated as a mere rubber stamp for Likud. Navigating the gridlock, he positions himself as a pragmatic alternative leader, keeping his options fluid within the wider national camp and making him the ultimate wildcard in the race. For Bennett, the current political paralysis is an existential crisis for the state, but it is also his clearest shot at the premiership.§!"
+ ISR_bezalel_smotrich: "Bezalel Smotrich"
+ ISR_bezalel_smotrich_name: "§YBezalel Smotrich§!"
+ ISR_bezalel_smotrich_desc: "§LAs the unyielding chairman of the Religious Zionist Party, Bezalel Smotrich stands as a hardline ideological anchor within the country's religious political spectrum. A lawyer and resolute champion of the settler movement, Smotrich views the Knesset as an arena for a deeper cultural struggle over the fundamental identity of the state.\n\nSmotrich's entire strategy hinges on demanding structural transformation, making sweeping judicial reforms and biblical land policies the strict conditions for his political allegiance. While Netanyahu attempts to harmonize the right, Smotrich is not easily appeased by vague executive promises. He expects absolute policy alignment, signaling that his hardline faction will remain an uncompromising force that will either secure Netanyahu's right-wing flank or bring the entire coalition down to protect its principles.§!"
+ ISR_aryeh_deri: "Aryeh Deri"
+ ISR_aryeh_deri_name: "§YAryeh Deri§!"
+ ISR_aryeh_deri_desc: "§LAt the helm of the powerful Shas party, Aryeh Deri is the longest-serving and most tactically astute pillar of the religious political spectrum. Representing Israel's traditionalist Sephardic and Mizrahi populations, Deri has welded orthodox traditionalism to a populist, social-welfare agenda that commands grassroots loyalty.\n\nDeri is a consummate backroom negotiator and a fiercely reliable ally to Netanyahu, preferring steady behind-the-scenes leverage over loud public ultimatums. His focus is singular: preserving the religious status quo and securing expansive budgetary allocations for his disadvantaged constituency. Deri's ironclad command over his voting base makes him an indispensable asset for Likud, and the veteran strategist is fully prepared to use that leverage to ensure the traditionalist camp remains firmly in control.§!"
+
+ ISR_national_support_text: "The National Bloc is [ROOT.GetNational_Support]"
+ ISR_religious_support_text: "The Religious Bloc is [ROOT.GetReligious_Support]"
+
+ ISR_national_low_support_tt: "The National Bloc will be §GSomewhat§! Supportive of this Decision"
+ ISR_national_mild_support_tt: "The National Bloc will be §GMildly§! Supportive of this Decision"
+ ISR_national_high_support_tt: "The National Bloc will be §GStrongly§! Supportive of this Decision"
+
+ ISR_religious_low_support_tt: "The Religious Bloc will be §GSomewhat§! Supportive of this Decision"
+ ISR_religious_mild_support_tt: "The Religious Bloc will be §GMildly§! Supportive of this Decision"
+ ISR_religious_high_support_tt: "The Religious Bloc will be §GStrongly§! Supportive of this Decision"
+
+ ISR_national_low_opposition_tt: "The National Bloc will be §RSomewhat§! Opposed to this Decision"
+ ISR_national_mild_opposition_tt: "The National Bloc will be §RMildly§! Opposed to this Decision"
+ ISR_national_high_opposition_tt: "The National Bloc will be §RStrongly§! Opposed to this Decision"
+
+ ISR_religious_low_opposition_tt: "The Religious Bloc will be §RSomewhat§! Opposed to this Decision"
+ ISR_religious_mild_opposition_tt: "The Religious Bloc will be §RMildly§! Opposed to this Decision"
+ ISR_religious_high_opposition_tt: "The Religious Bloc will be §RStrongly§! Opposed to this Decision"
  #Faction
  #Parties
  #Characters
@@ -127,15 +179,12 @@
  israel.12346.t: "Egypt Leaves the War"
  israel.12346.d: ""
  israel.12346.a: "An unexpected outcome"
- israel.1.t: "Bibi's Ongoing Trial Delayed"
- israel.1.d: ""
+ israel.1.t: "Bibi's Trial Delayed"
+ israel.1.d: "The halls of the Knesset have transformed into a fortress against justice as Benjamin Netanyahu formalizes his bid for parliamentary immunity. Following his formal indictment by Attorney General Avichai Mandelblit on charges of bribery, fraud, and breach of trust, the Prime Minister has turned to Speaker Yuli Edelstein to trigger a statutory shield.\n\nThe move has successfully halted the scheduled progression toward a Jerusalem District Court trial. Opposition leaders like Benny Gantz and Avigdor Lieberman have condemned the maneuver, pointing out that because the relevant Knesset committees remain unformed, the entire legal apparatus is locked in a state of suspension.\n\nFor now, the courtroom remains empty and the actual trial has yet to take place. The fate of the charges hinges entirely on whether a legislative majority can be secured to uphold the immunity, leaving the state's highest judicial crisis completely unresolved."
  israel.1.a: "This has bought us time..."
- israel.3.t: "State of Emergency Declared"
- israel.3.d: ""
+ israel.3.t: "State of Emergency"
+ israel.3.d: "The United States, Israel's ultimate geopolitical guarantor, has fractured into absolute chaos as the Second American Civil War erupts. With Washington out of the play and the American nuclear umbrella effectively dissolved, a vacuum has opened in the Middle East, one that Israel's regional adversaries are preparing to exploit.\n\nIntelligence briefs from the IDF General Staff paint a similar picture, as satellite imagery reveals coordinated Arab troop movements along the Syrian and Egyptian frontiers. Sensing total American paralysis, neighboring regimes are rapidly mobilizing, positioning vast armor and mechanized divisions in a clear prelude to a localized, multi-front invasion.\n\nIn a dramatic, late-night televised address, Benjamin Netanyahu has bypassed standard legislative procedures to declare a sweeping National State of Emergency. Citing the existential threat of an unprovoked regional war and the collapse of American backing, the Prime Minister has enacted sweeping emergency decrees that effectively freeze the Knesset and strip the presidency of its constitutional oversight."
  israel.3.a: "War will come to Israel soon..."
- israel.4.t: "Covid-19 Arrives in Israel"
- israel.4.d: ""
- israel.4.a: "Damn virus!"
  israel.5.t: "Coronavirus Pandemic Over"
  israel.5.d: ""
  israel.5.a: "Thank Adonai..."
@@ -149,7 +198,7 @@
  israel.8.d: ""
  israel.8.a: "Peace in the Middle East!"
  israel.9.t: "The War Situation pt 1"
- israel.9.d: ""
+ israel.9.d: "" 
  israel.9.a: "We must make haste with the war!"
  israel.10.t: "Failure in Israel"
  israel.10.d: ""
@@ -157,12 +206,56 @@
  israel.11.t: "Egypt Leaves the War"
  israel.11.d: ""
  israel.11.a: "We will deal with those Arab scum later"
+ israel.12.t: "A Trial"
+ israel.12.d: "Following countless political delays and a postponement forced by the coronavirus lockdown, Courtroom 317 of the Jerusalem District Court has opened its doors. Benjamin Netanyahu has entered the hall, becoming the first sitting prime minister in Israeli history to stand trial as a criminal defendant.\n\nNetanyahu delivered a fiery, televised address outside the building before stepping inside, denouncing the judiciary and declaring the indictment a ''political coup'' orchestrated by left-wing elites. Once inside the courtroom, the Prime Minister, wearing a face mask, took his place on the defendant's bench alongside co-defendants Shaul Elovitch, Iris Elovitch, and Arnon ''Noni'' Mozes.\n\nThe atmosphere remained thrilling as judges Rivka Friedman-Feldman, Moshe Bar-Am, and Oded Shaham formally read out the charges spanning Cases 1000, 2000, and 4000. Lead prosecutor Liat Ben-Ari faced off against Netanyahu's chief defense counsel, Micha Fettman, as both sides argued over the timeline for the discovery of evidence.\n\nWhile Netanyahu and the other defendants stood to quietly confirm they understood the severe allegations of bribery, fraud, and breach of trust, the legal war lines have been drawn."
+ israel.12.a: "There's progress."
+ israel.13.t: "Sweet As Honey"
+ israel.13.d: "Starting today, Benjamin Netanyahu has launched an aggressive, multi-pronged public relations campaign designed to pivot the national conversation away from political strife centered around the latest corruption trials and back toward his statesmanship.\n\nCentral to this strategy is a heavy reliance on televised national briefings. Utilizing the ongoing challenges of the pandemic, Netanyahu has positioned himself as the irreplaceable ''Leader of the Nation,'' adopting a crisis rhetoric alongside health officials like Moshe Bar Siman Tov to amplify his leadership image.\n\nThe jewel of this image offensive lies in the economic arena. The Prime Minister's Office has shifted focus toward aggressive economic stimulus packages, investments, and direct financial relief pipelines meant to appeal heavily to his traditional working-class base.\n\nWhether his calculated blitz can successfully drown out his political critics remains to be seen, but the Likud machine is operating at full capacity to ensure his mandate's survival."
+ israel.13.a: "Netanyahu is the best prime minister we had."
+ israel.14.t: "Our Allies Abroad"
+ israel.14.d: "The Prime Minister's diplomatic apparatus has initiated a global offensive, launching overtures to key partners in the world. Recognizing that regional stability requires powerful international backing. Benjamin Netanyahu has deepened direct channels with French President Emmanuel Macron, German Chancellor Angela Merkel, Indian Prime Minister Narendra Modi and American President Donald Trump.\n\nIn Europe, the diplomatic push centers on reshaping the continent's security architecture. Leveraging a ''strategic dialogue'' with France and persistent security coordination with Germany, Netanyahu has aggressively lobbied Paris and Berlin to adopt a stricter, united front against Iranian regional entrenchment and its nuclear expansion.\n\nMeanwhile, the relationship with New Delhi has evolved into a cornerstone of Israel's Asian policy. Capitalizing on the strong bond with Narendra Modi, Netanyahu's efforts have accelerated defense contracts and joint counter-terrorism frameworks that firmly cement India as a critical strategic partner the likes of Europe.\n\nYet, the true anchor of this diplomatic offensive remains across the Atlantic. Working closely with Washington, Netanyahu has leveraged deep personal ties with Donald Trump to solidify American backing, securing crucial recognition of the geopolitical situation and laying the groundwork for a transformative regional realignment."
+ israel.14.a: "The world is with us."
 
+ news.2000.t: "State of Emergency Declared in Israel"
+ news.2000.d: "In a dramatic, late-night broadcast from Jerusalem, Prime Minister Benjamin Netanyahu has declared a comprehensive National State of Emergency across Israel. The sweeping decree, enacted under executive authority, bypasses standard parliamentary oversight and suspends key legislative procedures, a move the government insists is necessary to combat an imminent existential threat to the state.\n\nThe drastic measures come in direct response to alarming intelligence reports confirming massive, unprovoked Arab troop movements along Israel's northern and southern frontiers. Satellite imagery has detected heavy armor divisions and mechanized infantry units from neighboring states rapidly mobilizing toward the borders, signaling a coordinated tactical positioning not seen in the region for decades.\n\nWhile the Prime Minister's Office framed the centralization of power as a defense measure, the domestic political arena has erupted into chaos. Opposition leaders have loudly condemned the declaration, labeling the emergency protocols a coup designed to sideline the opposition and consolidate autocratic control over the nation's security apparatus."
+ news.2000.a: "A war is on the horizon."
+
+ israel.1000.t: "Israel in the New Decade"
+ israel.1000.d: "As the new decade begins, the State of Israel finds itself trapped in an unprecedented political paralysis. Following two consecutive, fiercely contested elections in 2019 that failed to yield a majority government, the Knesset has automatically dissolved yet again. The nation is now hurtling toward an extraordinary third snap election scheduled for March, leaving the country operating under a caretaker cabinet. At the center of this constitutional storm is Prime Minister Benjamin Netanyahu, whose political survival is pushed to the brink following a formal indictment on charges of bribery, fraud, and breach of trust.\n\nOn the other hand, the domestic arena is heavily burdened by severe economic strain driven by the prolonged political gridlock. Because the Knesset has been unable to pass a stable state budget for over a year, the government is legally restricted to a monthly caretaker budget, freezing vital long-term infrastructure projects, cutting public sector allocations, and causing the national deficit to widen rapidly. This fiscal paralysis is beginning to take a toll on Israel's high-tech sector and global investment ratings, even as everyday citizens contend with rising living costs and stalled economic reforms. With no permanent treasury or finance policies in place to curb the mounting debt, the country's fiscal stability remains entirely hostage to the outcome of the ballot box."
+ israel.1000.a: "How will we deal with this?"
+
+ israel.1001.t: "23rd Knesset Election"
+ israel.1001.d: "Israeli citizens have cast their ballots in the election for the 23rd Knesset, marking an unprecedented third snap election within a single calendar year. Following consecutive failures to form a majority coalition after the April and September 2019 elections, the Central Elections Committee oversaw voting across more than 10,000 polling stations nationwide. Exit polls began broadcasting across major networks at 22:00, initiating the formal tally to determine the distribution of the 120 seats in parliament and whether any faction could secure the mandatory 61-seat majority required to form a government.\n\nThe final seat distribution will directly decide the political survival and leverage of the key contenders across the political spectrum. Incumbent Prime Minister Benjamin Netanyahu is leading Likud while under formal indictment for bribery, fraud, and breach. He has faced a fierce challenge from Blue and White, a centrist alliance led by former IDF Chief of Staff Benny Gantz and Yesh Atid leader Yair Lapid, who are running on a platform explicitly refusing to sit in a government with an indicted leader. Meanwhile, Naftali Bennett's Yamina alliance aims to maximize seats among modern-orthodox and secular nationalists to secure senior ministerial positions within the new cabinet. On the flank, the hard-right and ultra-Orthodox parties, composed of Aryeh Deri's Shas, United Torah Judaism, and Bezalel Smotrich's ultranationalist faction, seek to form a collective bloc large enough to demand legislative immunity for Netanyahu in exchange for sectoral funding and judicial restructuring."
+ israel.1001.a: "And the winner is.."
+
+ israel.1002.t: "..Nobody"
+ israel.1002.d: "The Central Elections Committee has finalized the formal count for the 23rd Knesset, confirming a complete legislative stalemate. Benjamin Netanyahu's Likud secured 36 seats, positioning it as the largest single party, but his traditional right-wing and ultra-Orthodox bloc finished with 58 seats, three short of a governing majority. Conversely, Benny Gantz's Blue and White secured 33 seats. While Gantz holds the recommendations from a fragmented 62-seat opposition alignment, his bloc spans from secular nationalists to Arab-majority lists, rendering a conventional coalition functionally unworkable. With neither leader commanding a clear path to a majority, President Reuven Rivlin faces a severe constitutional halt.\n\nUnder the strict provisions of Israeli law, the failure of initial exploratory talks triggers the safeguard of the Israeli parliamentary system: The 21-day window. During this period, the authority to select a Prime Minister shifts entirely from the President's discretion directly to the Knesset floor. Any Member of Knesset, including Netanyahu or Gantz, who can manually collect the physical signatures of at least 61 lawmakers within 21 days will automatically receive a 14-day mandate to form a government. If the clock expires without any candidate securing 61 signatures, the parliament will automatically dissolve, sending the country to its fourth consecutive election, prolonging the deadlock another year."
+ israel.1002.a: "I wonder who the next prime minister will be."
+
+ israel.4.t: "Covid-19 Arrives in Israel"
+ israel.4.d: "Israel's Ministry of Health has formally confirmed the country's first domestic cases of SARS-CoV-2, commonly known as ''COVID-19''. The virus, which has already disrupted global markets, penetrated Israeli borders through citizens returning from Europe, prompting immediate investigations and the enforcement of mandatory 14-day home isolations. To contain the spread, public health officials began imposing initial restrictions on public gatherings, sealing international arrivals at Ben Gurion Airport.\n\nThis public health emergency has collided directly with the ongoing constitutional crisis, as the 21-day window to collect 61 signatures remains wide open on the Knesset floor. With the clock ticking toward the automatic dissolution of parliament, the sudden outbreak adds another layer of instability to the negotiations circulating between the political blocs. Benjamin Netanyahu's caretaker government is forced to deal with the initial medical containment using emergency regulations, while opposition leaders Benny Gantz and Yair Lapid accuse the incumbent of leveraging the health crisis to stall the legislative process."
+ israel.4.a: "Damn virus!"
+ 
+ israel.1003.t: "No Government is Formed"
+ israel.1003.d: "At midnight, the 21-day constitutional window provided under Israeli law formally expired without any Member of Knesset securing the mandatory 61 signatures required to form a majority. Despite the negotiations in Jerusalem, neither Benjamin Netanyahu nor Benny Gantz could bridge the ideological chasms dividing the legislature. With the expiration of the deadline, the 23rd Knesset automatically dissolved itself, plunging the nation into an unprecedented fourth consecutive electoral cycle.\n\nBy law, the existing caretaker cabinet is preserved, ensuring that Benjamin Netanyahu retains his position as interim Prime Minister, dealing with the country via emergency regulations without a direct parliamentary mandate. This ongoing executive deadlock leaves the state budget legally frozen under restrictive month-to-month allocations, paralyzing long-term fiscal planning and deepening public frustration as the country grapples with both economic stagnation and the initial wave of the mid-March health crisis."
+ israel.1003.a: "The gridlock stands firm."
+
+ israel.1004.t: "The Next Election"
+ israel.1004.d: "The collapse of the 23rd Knesset and the preservation of the caretaker government have thrown Israel into an aggressive, defining race toward the early 2021 legislative elections. This fourth consecutive ballot has been transformed into a referendum on the political survival of Benjamin Netanyahu. With his ongoing corruption trial moving directly into the evidentiary phase, the incumbent Prime Minister must achieve what he failed to secure in three prior attempts, a decisive, unified 61-seat legislative majority.\n\nTo break the systemic deadlock, Netanyahu's strategy hinges on an audacious consolidation, bringing elements of the center-right Blue and White party into his wrath while simultaneously uniting the highly fractured factions of the hard-right. By actively courting moderate elements within Benny Gantz's camp who are desperate for political stability, Netanyahu aims to fracture the centrist opposition from within. Concurrently, he is working intensely to bring the religious and ultranationalist factions, including Aryeh Deri's Shas, United Torah Judaism, and Bezalel Smotrich's Religious Zionist Party, into alignment with his legislative agenda. Netanyahu is securing explicit policy commitments from these hardline leaders, binding their ideological goals to his own executive priorities. This unprecedented alignment of center-right institutionalists and firmly synchronized hard-right loyalists is the cornerstone of his plan to command an ironclad coalition, ensuring total legislative unity capable of delivering personal immunity and ending the gridlock on his own terms.\n\nHowever, the path to a stable government remains deeply compromised by a rapidly splintering political map. Ambitious right-wing challengers like Gideon Sa'ar are positioning themselves as alternative nationalist leaders, explicitly targeting voters who are wary of Netanyahu's political maneuvering. Simultaneously, a fierce secularist opposition led by Yair Lapid is working to expose this strategy, urging Blue and White voters not to fall for the incumbent's advances. As the country navigates a freezing state budget, a growing deficit, and an escalating health crisis, Netanyahu's survival depends entirely on whether he can successfully weld these conflicting center-right and hardline elements into a singular, functioning voting bloc."
+ israel.1004.a: "There's a long road ahead of us."
+
+ israel.2000.t: "The Trump Peace Plan"
+ israel.2000.d: "In a joint press conference at the White House, US President Donald Trump stood alongside Prime Minister Benjamin Netanyahu to formally unveil his administration's long-awaited Middle East Peace Plan, titled ''Peace to Prosperity.'' Spearheaded by senior adviser Jared Kushner, the 80-page document represents a fundamental, historic departure from decades of traditional US foreign policy. The proposal formally recognizes Jerusalem as Israel's undivided capital and rubber-stamps Israeli sovereignty over approximately 30% of the West Bank, including the strategically vital Jordan Valley and all major settlement blocs.\n\nWhile the plan nominally proposes a conditional ''two-state solution,'' the envisioned Palestinian entity would be completely demilitarized, entirely surrounded by Israeli territory, and stripped of control over its own airspace and border crossings. Its capital would be relegated to the outlying eastern neighborhoods of Abu Dis, completely separated from Jerusalem proper by the security barrier.\n\nIn exchange for accepting these terms and fulfilling strict anti-terrorism conditions, the Palestinians were offered a four-year freeze on new Israeli settlement expansion and a promised $50 billion international investment package aimed at economic revitalization. Palestinian Authority President Mahmoud Abbas immediately and fiercely rejected the framework, declaring that ''Jerusalem is not for sale'' and cutting all ties with both Washington and Jerusalem."
+ israel.2000.a: "Will they ever stop resisting?"
+
+ israel.2001.t: "Release of Naama Issachar"
+ israel.2001.d: "Following months of soaring diplomatic tension and aggressive public campaigns, Russian President Vladimir Putin formally signed a presidential pardon liberating Naama Issachar, a 26-year-old Israeli-American backpacker, on a reason described as ''humanitarian principles.'' Issachar was sentenced to an astonishing seven and a half years in a Russian penal colony, her offense being the discovery of nine grams of cannabis in her checked luggage during a routine transit stop at Moscow's Sheremetyevo International Airport, was widely viewed in Jerusalem as an act of geopolitical hostage diplomacy.\n\nPrime Minister Benjamin Netanyahu flew directly from Jerusalem to Moscow to personally escort Issachar and her mother, Yaffa, back to Israel aboard the formal prime ministerial plane. While Netanyahu's cabinet insisted that her release was a pure ''goodwill gesture'' from the Kremlin to the United States and Israel, the sudden resolution followed highly sensitive bilateral concessions. Chief among them was Israel's recent ruling to transfer control of the historic Alexander Courtyard property in Jerusalem's Old City directly to the Russian government."
+ israel.2001.a: "She is finally home."
  
  #spec Ideology
  ISR_right_zionism: "Right Zionism"
  #Focuses
- ISR_request_parliamentary_immunity:0 "Request Parliamentary Immunity"
+ ISR_counting_the_ballots:0 "Counting the Ballots"
  ISR_the_idf:0 "Increase the Defense Budget"
  ISR_reinforce_golan:0 "Reinforce the Golan"
  ISR_purchase_american_weapons:0 "Purchase American Weapons"
@@ -174,7 +267,7 @@
  ISR_state_bailouts:0 "State Bailouts"
  ISR_covid_eradicated:0 "COVID-19 Eradicated"
 
- ISR_sweeten_bibis_image:0 "Sweeten Bibi's Image"
+ ISR_request_parliamentary_immunity:0 "Request Parliamentary Immunity"
  ISR_increase_foreign_support:0 "Increase Foreign Support"
  ISR_diamond_exchange: "The Diamond Exchange"
  ISR_promote_jewish_business: "Promote Jewish Businesses"
@@ -190,6 +283,9 @@
  ISR_women_on_the_front: "Women on the Front"
  ISR_well_equipped_army: "Reliable Armories"
  ISR_one_final_push: "One Final Push"
+
+ ISR_counting_ballots: "The Votes Have Been Tallied"
+ ISR_the_race_is_up: "The Election Race is Up"
 
  #Scripted Localisation
  ISR_Coalition_Likkud: "£GFX_ISR_likkud_texticon  §BLikkud§!"
@@ -221,12 +317,25 @@
  ISR_yisrael_support_medium: "§yMedium§!"
  ISR_yisrael_support_high: "§8High§!"
  ISR_yisrael_support_very_high: "§GUnwavering§!"
+
+ ISR_national_support_opposed: "§ROpposed§!"
+ ISR_national_support_skeptical: "§tSkeptical§!"
+ ISR_national_support_hesitant: "§yHesitant§!"
+ ISR_national_support_willing: "§8Willing§!"
+ ISR_national_support_committed: "§GCommitted§!"
+
+ ISR_religious_support_opposed: "§ROpposed§!"
+ ISR_religious_support_skeptical: "§tSkeptical§!"
+ ISR_religious_support_hesitant: "§yHesitant§!"
+ ISR_religious_support_willing: "§8Willing§!"
+ ISR_religious_support_committed: "§GCommitted§!"
  
  ISR_arab_israeli_war: "The Second Arab-Israeli War"
  ISR_arab_israeli_war_text: "\"I consider peace more important than territory.\"\n - David Ben Gurion"
  ISR_arab_israeli_war_button: "Old Grudges Don't Die"
 
  JAP_hog_benjamin_netanyahu: "Prime Minister: §HBenjamin Netanyahu§!\n\n\n\n\n\n\n\n   £GFX_ISR_hog_benjamin_netanyahu_por\n\n\n\n\n\n\n\n\n-------------------------------------"
+ POLITICS_REUVEN_RIVLIN_DESC: "Born into a prominent Jerusalem family with deep roots in the city, Rivlin built his decades-long career within the right-wing Likud party. He served as a Member of the Knesset and twice as its Speaker, earning a reputation for fierce independence and a strict adherence to parliamentary protocol. Despite his staunch right-wing ideological opposition to a Palestinian state, his unwavering defense of minority rights and democratic institutions paved his path to the presidency in 2014. Stepping into a ceremonial role, he transformed the office into a platform for civic bridge-building.\n\nIn sharp contrast to the polarizing rhetoric dominating the political landscape, Rivlin's presidency is defined by his "Four Tribes" speech, which warned against the growing chasm between secular Jews, national religious Jews, Ultra-Orthodox Jews, and Arab Israelis. His supporters revere him as a compassionate figure, the "president of all citizens,'' who uses his authority to protect the rule of law and champion co-existence. His critics on the political right, however, view him with suspicion, occasionally labeling his calls for inclusivity as a betrayal of nationalist principles, while some on the left argue his rhetoric cannot bridge the fundamental systemic inequalities he overlooks. Nevertheless, as the country weathers unprecedented political instability, Rivlin remains a rare institutional anchor trying to hold the pieces together."
 
  #FLAVOR EVENTS
  israel.9901.t:0 "A Photograph in the Helmet" 

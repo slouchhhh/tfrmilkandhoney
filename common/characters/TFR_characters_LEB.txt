@@ -1,0 +1,53 @@
+characters={
+	LEB_michel_aoun_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/LEB/Michel Aoun.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = left_populism
+		}
+		country_leader = {
+			ideology = christian_democracy
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+		}
+	}
+
+	HEZ_hassan_nashrallah_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/HEZ/Hassan Nasrallah.png" 
+			}
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+			traits={ HEZ_secretary_general_of_the_jihad_council }
+		}
+	}
+
+	LEB_joseph_aoun_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/LEB/Joseph Aoun.png" 
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+	}
+}

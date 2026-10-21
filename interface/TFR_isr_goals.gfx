@@ -55,6 +55,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ISR_counting_the_ballots"
+		texturefile = "gfx/interface/goals/ISR/ISR_counting_the_ballots.png"
+	}
+
+	spriteType = {
 		name = "GFX_ISR_covid_1"
 		texturefile = "gfx/interface/goals/ISR/ISR_covid_1.png"
 	}

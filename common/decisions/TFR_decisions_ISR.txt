@@ -25,6 +25,280 @@ ISR_knesset_category = {
 	}
 }
 
+ISR_election_race_category = {
+	ISR_election_timer = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		visible = {
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 360
+		fixed_random_seed = no
+		timeout_effect = {
+			country_event = {
+				id = #
+			}
+		}
+	}
+	ISR_national_bloc_divider = {
+		icon = generic_propaganda_campaigns
+		allowed = { tag = ISR }
+		visible = { always = yes }
+		available = { always = no }
+		fire_only_once = no
+		cost = 0
+		complete_effect = {}
+	}
+	ISR_national_power_sharing = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 75
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = ISR_national_high_support_tt
+			custom_effect_tooltip = ISR_religious_low_opposition_tt
+			add_to_variable = {
+				var = ISR_national_support
+				value = 15
+			}
+			subtract_from_variable = {
+				var = ISR_religious_support
+				value = 5
+			}
+		}
+	}
+	ISR_national_standardize_security_appointments = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 50
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = ISR_national_mild_support_tt
+			custom_effect_tooltip = ISR_religious_low_opposition_tt
+			add_to_variable = {
+				var = ISR_national_support
+				value = 10
+			}
+			subtract_from_variable = {
+				var = ISR_religious_support
+				value = 5
+			}
+		}
+	}
+	ISR_national_coordinate_with_regional_allies = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 50
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = ISR_national_mild_support_tt
+			custom_effect_tooltip = ISR_religious_mild_opposition_tt
+			add_to_variable = {
+				var = ISR_national_support
+				value = 10
+			}
+			subtract_from_variable = {
+				var = ISR_religious_support
+				value = 10
+			}
+		}
+	}
+	ISR_national_recognize_agricultural_outposts = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 75
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = ISR_national_high_support_tt
+			custom_effect_tooltip = ISR_religious_low_opposition_tt
+			add_to_variable = {
+				var = ISR_national_support
+				value = 15
+			}
+			subtract_from_variable = {
+				var = ISR_religious_support
+				value = 5
+			}
+		}
+	}
+	ISR_national_implement_the_egalitarian_compromise = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 50
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = ISR_national_mild_support_tt
+			custom_effect_tooltip = ISR_religious_mild_opposition_tt
+			add_to_variable = {
+				var = ISR_national_support
+				value = 10
+			}
+			subtract_from_variable = {
+				var = ISR_religious_support
+				value = 10
+			}
+		}
+	}
+	ISR_religious_bloc_divider = {
+		icon = generic_propaganda_campaigns
+		allowed = { tag = ISR }
+		visible = { always = yes }
+		available = { always = no }
+		fire_only_once = no
+		cost = 0
+		complete_effect = {}
+	}
+	ISR_religious_overhaul_the_ministry_of_education = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 75
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = ISR_religious_high_support_tt
+			custom_effect_tooltip = ISR_national_mild_opposition_tt
+			add_to_variable = {
+				var = ISR_religious_support
+				value = 15
+			}
+			subtract_from_variable = {
+				var = ISR_national_support
+				value = 10
+			}
+		}
+	}
+	ISR_religious_expand_the_rabbinical_court_jurisdiction = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 50
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = ISR_religious_mild_support_tt
+			custom_effect_tooltip = ISR_national_low_opposition_tt
+			add_to_variable = {
+				var = ISR_religious_support
+				value = 10
+			}
+			subtract_from_variable = {
+				var = ISR_national_support
+				value = 5
+			}
+		}
+	}
+	ISR_religious_transfer_civil_administration = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 75
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = ISR_religious_high_support_tt
+			custom_effect_tooltip = ISR_national_mild_opposition_tt
+			add_to_variable = {
+				var = ISR_religious_support
+				value = 15
+			}
+			subtract_from_variable = {
+				var = ISR_national_support
+				value = 10
+			}
+		}
+	}
+	ISR_religious_fund_the_settlement_infrastructure_bypass = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 50
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = ISR_religious_mild_support_tt
+			custom_effect_tooltip = ISR_national_low_opposition_tt
+			add_to_variable = {
+				var = ISR_religious_support
+				value = 10
+			}
+			subtract_from_variable = {
+				var = ISR_national_support
+				value = 5
+			}
+		}
+	}
+	ISR_religious_introduce_the_judicial_override_clause = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			tag = ISR
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 100
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = ISR_religious_high_support_tt
+			custom_effect_tooltip = ISR_national_high_opposition_tt
+			add_to_variable = {
+				var = ISR_religious_support
+				value = 15
+			}
+			subtract_from_variable = {
+				var = ISR_national_support
+				value = 15
+			}
+		}
+	}
+}
+
 ISR_arab_israeli_war_category = {
 	ISR_arab_israeli_war_timeout = {
 		icon = GFX_decision_generic_ignite_civil_war

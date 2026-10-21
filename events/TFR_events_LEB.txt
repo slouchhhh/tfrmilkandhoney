@@ -1,0 +1,58 @@
+add_namespace = lebanon
+
+# 2020 Beirut explosion
+country_event = {
+	id = lebanon.1
+	title = lebanon.1.t
+	desc = lebanon.1.d
+	picture = GFX_report_beirut_explosion
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = lebanon.1.a
+		add_stability = -0.05
+		add_manpower = -200
+		add_ideas = SOM_failed_state
+		LEB = {
+            country_event = {
+                id = lebanon.2
+				days = 150
+            }
+        }
+	}
+}
+# military coup
+country_event = {
+	id = lebanon.2
+	title = lebanon.2.t
+	desc = lebanon.2.d
+	picture = GFX_report_beirut_explosion
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = lebanon.2.a
+		change_government_type_military_dictatorship = yes
+		set_politics = {
+			ruling_party = nationalist
+		}
+		set_popularities = {
+			social_liberal = 13
+			market_liberal = 15
+			authoritarian_democrat = 18
+			conservative = 11
+			nationalist = 28
+			social_democrat = 10
+			communist = 3
+			fascist = 2
+		}
+		set_temp_variable = { coalition_partner_var_temp = token:conservative }
+		remove_from_coalition = yes
+		set_temp_variable = { coalition_partner_var_temp = token:authoritarian_democrat }
+		remove_from_coalition = yes
+		news_event = { id = news.2005 days = 1 }
+	}
+}
